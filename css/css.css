@@ -1,0 +1,131 @@
+h2.head_block {
+    margin: 35px 0 11px 0 !important;
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+
+/* логотип верхнее меню*/
+.tel_container .row {
+    padding: 5px 0;
+}
+
+.tel_container .row  a{
+    color: #000000;
+}
+.headlogo_box {
+    padding: 22px 0;
+}
+
+ul.main_menu {
+    float: left;
+    margin-top: 14px;
+}
+
+ul.main_menu a.nav-link {
+    padding: 0.5rem 0.8rem;
+    color: #000000;
+}
+ul.main_menu .active {
+    border-bottom: 4px solid #8e26b8;
+}
+
+.main_menu_box button {
+    margin-top: 15px;
+}
+div.pic_box {
+    padding: 21px 0 51px 0;
+    margin: auto;
+    width: 150px;
+}
+
+.pic_box div{
+    height: 12px; 
+    border: solid 1px #dddddd;
+    width: 12px; 
+    border-radius: 50px;
+    margin-right: 24px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.pic_box .active_cir {
+    height: 21px; 
+    border: solid 1px #8e26b8;
+    width: 21px; 
+    border-radius: 50px;
+    margin-right: 19px; 
+    cursor: pointer;
+    background-color: #8e26b8;
+    margin-top: 0 !important;
+}
+/*блок о особенностях */
+div.button_os {
+    height: 58px;
+    border: solid 1px #dddddd;
+    width: 500px;
+    margin: 77px 0 33px 0;
+    overflow: hidden;
+}
+div.button_os .bt_sr_active {
+    background: #8e26b8;
+    color: #fff;
+}
+.button_os span{
+    padding: 8px 35px 12px 35px;
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*блок главной преимущества*/
+.blok_pre img{
+    margin: auto;
+    display: block;
+    margin-top: 22%;
+}
+
+.blok_pre .pre_text {
+    margin-top: 28px;
+}
+
+.blok_pre h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/*о сервисе*/
+.blok_pre img.slayd{
+    margin-top: 10px;
+}
+
+/*Список проектов*/
+.main_list_proekt .card{
+    float: left;
+    width: 15rem;
+    margin-left: 30px;
+}
+.main_list_proekt h5.card-title{
+    text-transform: uppercase;
+    min-height: 73px;
+    font-weight: normal; 
+}
+.main_list_proekt .card span {
+    float: left;
+    font-size: 0.8rem;
+}
+.main_list_proekt .card span p {
+    font-size: 1rem;
+}
+
+.main_list_proekt .card span img{
+    margin-top: 5px;
+}
+
+.main_list_proekt .card .card-body a{
+    display: inline-block;
+    background: #8e26b8;
+    color: #fff;
+    width: 10rem;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+}
