@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="css/css.css">
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>        
-        <script src="js/bootstrap.min.js"></script>        
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>      
     </head>
     <body>
         <!--Шапка с телефоном-->
@@ -268,14 +269,14 @@
                             array('title'=>'Кто может привлечь деньги?', 'text'=>''),
                             array('title'=>'В какой форме происходит инвестирование', 'text'=>'Мы предлагаем Вам инвестирование в финансовые инструменты с фиксированным доходом, которые четко позволяют определить срок и ставку ожидаемой доходности – это могут быть облигации, производные финансовые инструменты или структурные продукты (комбинации различных финансовых инструментов с четко определенной структурой будущих выплат). '),
                             array('title'=>'На какой срок вкладываются средства?', 'text'=>''),
-                            array('title'=>'Для чего  инвестору предоставляется возможность  вложения средств не только в малый бизнес, но и в государственные облигации крупных компаний?', 'text'=>'')
+                            array('title'=>'Для чего  инвестору предоставляется возможность  вложения средств не только в малый бизнес, но и в государственные облигации крупных компаний?', 'text'=>'Мы предлагаем Вам инвестирование в финансовые инструменты с фиксированным доходом, которые четко позволяют определить срок и ставку ожидаемой доходности – это могут быть облигации, производные финансовые инструменты или структурные продукты (комбинации различных финансовых инструментов с четко определенной структурой будущих выплат).')
                         );
-                        foreach($ar_help_quests as $item_help){
+                        foreach($ar_help_quests as $key => $item_help){
                             ?>
-                            <div class="box_help card">
-                                <div class="card-header border-bottom-0"><span class="float-left box_head_title"><?=$item_help['title']?></span><span class="float-right icon_pl_min"></span></div>                                
-                                <div class="card-body" style="display:none;">                                    
-                                    <p><?=$item_help['text']?></p>
+                            <div class="box_help card" id="helpbox<?=$key?>">
+                                <div class="card-header border-bottom-0"><span class="float-left box_head_title"><?=$item_help['title']?></span><span class="float-right icon_pl"></span></div>                                
+                                <div class="card-body hide border-top" style="display:none;">                                    
+                                    <p style="margin-top: 1.2rem;"><?=$item_help['text']?></p>
                                 </div>
                             </div>
                             <?php

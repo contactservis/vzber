@@ -176,12 +176,24 @@ div.button_os .bt_sr_active {
     font-weight: 300;
 }
 
-.list_faq .icon_pl_min {
+.list_faq .icon_pl {
     cursor: pointer;
     width: 26px;
     height: 26px;
     background: url(img/plus.png) center;
     margin-top: 4px;
+}
+
+.list_faq .icon_min {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    background: url(img/minus.png) center;
+    margin-top: 4px;
+}
+
+.list_faq .card-body{
+    padding: 0 1.25rem;
 }
 
 /*Подвал*/
