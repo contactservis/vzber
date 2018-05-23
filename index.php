@@ -222,7 +222,9 @@
                     <h2 class="text-left head_block">Регистрация</h2>
                     <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
                 </div>
-                <div class="col-xl-1"></div>
+                <div class="col-xl-1">
+                    <div class="registration_dec_line border-right" style="height: 7rem; margin-top: 39px;"></div>
+                </div>
                 <div class="col-xl-5">
                     <h2 class="text-left head_block">Вход</h2>
                     <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
@@ -240,8 +242,9 @@
                     <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Имя">
                     <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Телефон">
                 </div>
-                <div class="col-xl-1">
-
+                <div class="col-xl-1">                    
+                    <p class="text-center" style="color:#b5b5b5; margin-top: 10px;">Или</p>
+                    <div class="registration_dec_line border-right" style="height: 14rem;"></div>
                 </div>
                 <div class="col-xl-4">
                     <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Логин">
@@ -270,8 +273,8 @@
                         foreach($ar_help_quests as $item_help){
                             ?>
                             <div class="box_help card">
-                                <div class="card-header"><span class="float-left box_head_title"><?=$item_help['title']?></span><span class="float-right">+</span></div>                                
-                                <div class="card-body">                                    
+                                <div class="card-header border-bottom-0"><span class="float-left box_head_title"><?=$item_help['title']?></span><span class="float-right">+</span></div>                                
+                                <div class="card-body" style="display:none;">                                    
                                     <p><?=$item_help['text']?></p>
                                 </div>
                             </div>
