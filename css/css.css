@@ -168,11 +168,20 @@ div.button_os .bt_sr_active {
 }
 .list_faq .box_help .box_head_title {
     width: 90%;
+    cursor: pointer;
 }
 .list_faq .card-header {
     background: #fff;
     font-size: 1.5rem;
     font-weight: 300;
+}
+
+.list_faq .icon_pl_min {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    background: url(img/plus.png) center;
+    margin-top: 4px;
 }
 
 /*Подвал*/

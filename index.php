@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="fonts/roboto.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/css.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>        
+        <script src="js/bootstrap.min.js"></script>        
     </head>
     <body>
         <!--Шапка с телефоном-->
@@ -273,7 +273,7 @@
                         foreach($ar_help_quests as $item_help){
                             ?>
                             <div class="box_help card">
-                                <div class="card-header border-bottom-0"><span class="float-left box_head_title"><?=$item_help['title']?></span><span class="float-right">+</span></div>                                
+                                <div class="card-header border-bottom-0"><span class="float-left box_head_title"><?=$item_help['title']?></span><span class="float-right icon_pl_min"></span></div>                                
                                 <div class="card-body" style="display:none;">                                    
                                     <p><?=$item_help['text']?></p>
                                 </div>
