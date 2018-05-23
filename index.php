@@ -3,6 +3,7 @@
     <head>
         <title>Зберополис</title>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="fonts/roboto.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/css.css">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -23,14 +24,14 @@
         </div>
         <!--навигационная панель-->
         <div class="container">
-            <div class="row" style="padding: 22px 0;">                
+            <div class="row" style="padding: 9px 0;">                
                     <div class="col-xl-4">                            
                         <img src="img/logo.png">                        
                     </div>
                     <div class="col-xl-8 main_menu_box">
                         <ul class="nav main_menu">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">ГЛАВНАЯ</a>
+                                <a class="nav-link" href="#"><span class="active">ГЛАВНАЯ</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">О ПРОЕКТЕ</a>
@@ -52,9 +53,10 @@
         <!--Большой рекламный слайдер-->
         <div class="main_slayder">
             <div style="overflow: hidden; width: 100%; text-align: center;">
-                <img src="img/big_baner2.jpg" alt="инвестиционный сервис Зберополис"/>                
+                <img src="img/big_baner2.jpg" alt="инвестиционный сервис Зберополис"/>                             
             </div>
         </div>
+        <!--Блок преимущества-->
         <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -71,8 +73,7 @@
                             </div>
                         </div>
                 </div>
-        </div>
-        <!--Блок преимущества-->
+        </div>        
         <div class="container blok_pre">
             <div class="row">
                 <div class="col-xl-6">
@@ -112,13 +113,13 @@
             </div>
             <div class="row">
                 <div class="col-xl-6 col-sm-1">
-                    <h2>ZБЕРОПОЛИС</h2>
+                    <h2 class="head_block">ZБЕРОПОЛИС</h2>
                     <h3 style="margin-top: 13px;">ОНЛАЙН-ПЛОЩАДКА ДЛЯ ПРИВЛЕЧЕНИЯ ИНВЕСТИЦИЙ В БИЗНЕС ПРОЕКТЫ</h3>
                 </div>
             </div>
             <div class="row" style="margin-top: 30px;">
                 <div class="col-xl-6 col-sm-1">
-                    <img class="slayd rounded" src="img/sld_oserv.jpg" alt="Зберополис инвестиционный сервис" />
+                    <img class="slayd rounded" src="img/zaglushka.png" alt="Зберополис инвестиционный сервис" />
                 </div>
                 <div class="col-xl-6 col-sm-1">
                     <p>ZBEROPOLIS – это сервис, который предоставляет людям возможность вкладывать свои сбережения в различные направления: от предприятий малого и среднего бизнеса под ставку свыше 30% годовых до государственных облигаций, дающих высочайший уровень защиты капитала.</p>
@@ -128,7 +129,7 @@
             </div>
         </div>
         <!--Блок с проектами-->
-        <div class="container" style="margin-bottom:100px;">
+        <div class="container">
                 <div class="row">
                     <div class="col-xl-12 col-sm-12">
                         <h2 class="text-center head_block">ПРОЕКТЫ</h2>
@@ -170,36 +171,141 @@
                         <?php } ?>
                     </div>
                 </div>
-        </div>
-    <!--Блок схема работы-->
-    <div class="container">
-        <div class="row" style="margin-top: 30px;">
-                <div class="col-xl-6 col-sm-1">
-                    <img class="slayd rounded" src="img/sld_oserv2.jpg" alt="Зберополис инвестиционный сервис" />
-                </div>
-                <div class="col-xl-6 col-sm-1">
-                    <h2>Для инвесторов</h2>
-                    <h3>как вложить деньги</h3>
-                    <p>ZBEROPOLIS – это сервис, который предоставляет людям возможность вкладывать свои сбережения в различные направления: от предприятий малого и среднего бизнеса под ставку свыше 30% годовых до государственных облигаций, дающих высочайший уровень защиты капитала.</p>
-                    <p>Это также механизм, позволяющий небольшим компаниям быстро и эффективно привлекать финансирование для своих проектов.</p>
-                    <p>Инвесторами могут быть физические или юридические лица, получателями финансирования (эмитентами) – коммерческие организации или индивидуальные предприниматели, зарегистрированные на территории Российской Федерации. Посредником между инвесторами и эмитентами выступает брокер – профессиональный участник рынка ценных бумаг.</p>
+                <div class="row text-center">
+                        <p style="display: inline-block;margin: 32px auto;font-size: 1.1rem;"><a href="#">Зарегистрируйтесь,</a> чтобы увидеть больше компаний.</p>
                 </div>
         </div>
-    </div>
-    <!--Блок регистрация/авторизация-->
-    <div class="container">
-        <div class="row">
+        <!--Блок схема работы-->
+        <div class="container shema_rabotu">
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12">
+                        <h2 class="text-center head_block">Схема работы</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12">
+                        <div class="pic_box">
+                            <div class="active_cir float-left" data="f"></div>
+                            <div class="float-left" data="f"></div>
+                            <div class="float-left" data="f"></div>
+                            <div class="float-left" data="f"></div>                                                              
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                    <div class="col-xl-6 col-sm-1">
+                        <img class="slayd rounded" src="img/sld_oserv2.jpg" alt="Зберополис инвестиционный сервис" />
+                    </div>
+                    <div class="col-xl-6 col-sm-1 box_investr">
+                        <h2>Для инвесторов</h2>
+                        <h3>как вложить деньги</h3>
+                        <p>ZBEROPOLIS – это сервис, который предоставляет людям возможность вкладывать свои сбережения в различные направления: от предприятий малого и среднего бизнеса под ставку свыше 30% годовых до государственных облигаций, дающих высочайший уровень защиты капитала.</p>
+                        <p>Это также механизм, позволяющий небольшим компаниям быстро и эффективно привлекать финансирование для своих проектов.</p>
+                        <p>Инвесторами могут быть физические или юридические лица, получателями финансирования (эмитентами) – коммерческие организации или индивидуальные предприниматели, зарегистрированные на территории Российской Федерации. Посредником между инвесторами и эмитентами выступает брокер – профессиональный участник рынка ценных бумаг.</p>
+                    </div>
+            </div>
         </div>
-    </div>
-    <!--Блок вопросы-->
-    <div class="container">
-        <div class="row">
+        <!--Блок регистрация/авторизация-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2 class="text-center head_block">Регистрация/Вход</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-sm-12">
+                    <div class="rounded button_os"><span class="bt_sr_active">Инвестор</span><span>Эмитент</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <h2 class="text-left head_block">Регистрация</h2>
+                    <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                </div>
+                <div class="col-xl-1"></div>
+                <div class="col-xl-5">
+                    <h2 class="text-left head_block">Вход</h2>
+                    <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                </div>
+            </div>
+            <div class="row box_reg_input">
+                <div class="col-xl-3">
+                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Физическое лицо">
+                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Фамилия">
+                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Отчество">
+                    <button type="" class="vz_button btn">Регистрация</button>
+                </div>
+                <div class="col-xl-3">
+                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Юридическое лицо">
+                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Имя">
+                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Телефон">
+                </div>
+                <div class="col-xl-1">
+
+                </div>
+                <div class="col-xl-4">
+                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Логин">
+                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Пароль">
+                    <button type="" class="vz_button btn">Войти</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <!--Подвал-->
-    <div class="container">
-        <div class="row">
+        <!--Блок вопросы-->
+        <div class="container questions">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h2 class="text-center head_block">Вопросы и ответы</h2>
+                    </div>
+                </div>
+            <div class="row list_faq">
+                <div class="col-xl-12">
+                    <?php
+                        $ar_help_quests = array(
+                            array('title'=>'Кто может быть инвестором?', 'text'=>'ZБЕРОПОЛИС – это сервис, который дает частным инвесторам возможность вкладывать свои средства в различные направления: от предприятий малого и среднего бизнеса до государственных облигаций. Инвестором может стать любое физическое или юридическое лицо, зарегистрированное на территории Российской Федерации. '),
+                            array('title'=>'Кто может привлечь деньги?', 'text'=>''),
+                            array('title'=>'В какой форме происходит инвестирование', 'text'=>'Мы предлагаем Вам инвестирование в финансовые инструменты с фиксированным доходом, которые четко позволяют определить срок и ставку ожидаемой доходности – это могут быть облигации, производные финансовые инструменты или структурные продукты (комбинации различных финансовых инструментов с четко определенной структурой будущих выплат). '),
+                            array('title'=>'На какой срок вкладываются средства?', 'text'=>''),
+                            array('title'=>'Для чего  инвестору предоставляется возможность  вложения средств не только в малый бизнес, но и в государственные облигации крупных компаний?', 'text'=>'')
+                        );
+                        foreach($ar_help_quests as $item_help){
+                            ?>
+                            <div class="box_help card">
+                                <div class="card-header"><span class="float-left box_head_title"><?=$item_help['title']?></span><span class="float-right">+</span></div>                                
+                                <div class="card-body">                                    
+                                    <p><?=$item_help['text']?></p>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                    ?>
+                </div>
+            </div>
         </div>
-    </div>
+        <!--Подвал-->
+        <footer>
+            <div class="grey_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 text-center tel_box">
+                                    <h2>8(800) 000 00 00</h2>
+                                    <h4>Бесплатно по России</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row bottom_footer">
+                    <div class="col-xl-7">
+                                <img src="img/logo_hd.png" alt="">
+                    </div>
+                    <div class="col-xl-5 box_footer_podpiska">
+                        <h3>Подписка на новости</h3>
+                        <h4>Будьте в курсе всех событий</h4>
+                        <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="E-mail">
+                        <button type="" class="vz_button btn float-right">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

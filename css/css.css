@@ -1,7 +1,8 @@
 h2.head_block {
     margin: 35px 0 11px 0 !important;
     font-size: 2.3rem;
-    font-weight: normal;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 /* логотип верхнее меню*/
@@ -26,7 +27,8 @@ ul.main_menu a.nav-link {
     color: #000000;
 }
 ul.main_menu .active {
-    border-bottom: 4px solid #8e26b8;
+    border-bottom: 3px solid #8e26b8;
+    padding-bottom: 5px;
 }
 
 .main_menu_box button {
@@ -60,10 +62,10 @@ div.pic_box {
 }
 /*блок о особенностях */
 div.button_os {
-    height: 58px;
+    height: 61px;
     border: solid 1px #dddddd;
-    width: 500px;
-    margin: 77px 0 33px 0;
+    display: inline-block;
+    margin: 62px 0 -6px 0;
     overflow: hidden;
 }
 div.button_os .bt_sr_active {
@@ -71,7 +73,7 @@ div.button_os .bt_sr_active {
     color: #fff;
 }
 .button_os span{
-    padding: 8px 35px 12px 35px;
+    padding: 11px 35px 12px 35px;
     display: inline-block;
     font-size: 1.5rem;
     cursor: pointer;
@@ -128,4 +130,90 @@ div.button_os .bt_sr_active {
     width: 10rem;
     margin-left: 1rem;
     margin-top: 1.2rem;
+}
+/*Схема работы*/
+.shema_rabotu .box_investr h2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.shema_rabotu .box_investr h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 19px;
+}
+
+/*Регистраци*/
+
+.box_reg_input input {
+    margin-bottom: 18px;
+}
+
+/*Вопросы*/
+
+.list_faq {
+    margin-top: 32px;
+    padding: 0 3.3rem;
+    margin-bottom: 82px;
+}
+
+.list_faq .box_help {
+    margin-bottom: 18px;
+}
+.list_faq .box_help .box_head_title {
+    width: 90%;
+}
+.list_faq .card-header {
+    background: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/*Подвал*/
+footer .grey_bg{
+    background: #f2f2f2;
+}
+
+footer .tel_box{
+    padding-top: 32px;
+    padding-bottom: 35px;
+}
+
+footer .bottom_footer{
+    padding-bottom: 145px;
+    padding-top: 45px;
+}
+
+footer .bottom_footer img{
+    margin-top: 7px;
+}
+
+footer .bottom_footer button {
+    margin-top: 22px;
+}
+
+footer .box_footer_podpiska h3 {
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+footer .box_footer_podpiska h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.vz_input {
+    padding: 16px 30px 16px 22px;
+    color: #a8a8a8;
+}
+
+.vz_button {
+    padding: 6px 33px 4px 33px;
+    color: #fff;
+    background: #8e26b8; 
 }
