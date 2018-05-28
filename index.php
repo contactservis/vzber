@@ -1,3 +1,18 @@
+<?php 
+
+if(!isset($_COOKIE['tryUser'])) {
+    
+    if(isset($_POST['codeUser'])){
+        $codeUser = $_POST['codeUser'];        
+        if ($codeUser == '123qwe'){
+            setcookie("tryUser", "yes", time()+3600);
+            header("Refresh:0");
+        }
+    }
+    include_once('loginform.php');
+    
+ } else { ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -53,8 +68,13 @@
         </div>
         <!--Большой рекламный слайдер-->
         <div class="main_slayder">
-            <div style="overflow: hidden; width: 100%; text-align: center;">
-                <img src="img/big_baner2.jpg" alt="инвестиционный сервис Зберополис"/>                             
+            <div style="overflow: hidden; width: 100%; text-align: center; position: relative;">
+                <img src="img/big_baner3.jpg" alt="инвестиционный сервис Зберополис"/> 
+                <div class="slayder_text"> 
+                    <h1 style="font-size: 3rem;">Инвестируйте</h1>
+                    <h3 style="font-size: 2.5rem; font-weight: 100; margin-top: -13px;">с доходностью свыше</h3>
+                    <span style="font-size: 9rem; margin-top: -60px; display: inline-block;">30%</span><span style="font-size: 2.5rem; font-weight: 100; margin-top: -18px; display: block; float: right; margin-right: 66px;">годовых</span>
+                </div>
             </div>
         </div>
         <!--Блок преимущества-->
@@ -77,39 +97,41 @@
         </div>        
         <div class="container blok_pre">
             <div class="row">
-                <div class="col-xl-6">
-                    <div style="border: 1px solid #dddddd; height: 167px;border-radius: 5px;">
-                        <div class="row">
-                            <div class="col-xl-4 col-sm-4">
-                                <img src="img/inv_ico_pre.png">
-                            </div>    
-                            <div class="col-xl-8 col-sm-8 pre_text">
-                                    <h3>ИНВЕСТРОМ МОЖЕТ СТАТЬ КАЖДЫЙ</h3>
-                                    <p>минимальная сумма инвестирования 10 000 руб.</p>
-                            </div>
-                        </div>
-                    </div>
+                <?php 
+                $arr_preim = array(
+                    array(
+                        'img'   => 'img/inv_ico_pre.png',
+                        'title' => 'ИНВЕСТРОМ МОЖЕТ СТАТЬ КАЖДЫЙ',
+                        'text'  => 'Минимальная сумма инвестирования 10 000 руб.'
+                    ),
+                    array(
+                        'img'   => 'img/fin_ico_pre.png',
+                        'title' => 'БЫСТРОЕ ФИНАНСИРОВАНИЕ БЕЗ ЗАЛОГА',
+                        'text'  => 'Сроки привличения средств от 1 месяца.'
+                    ),
+                    array(
+                        'img'   => 'img/ob_ico_pre.png',
+                        'title' => 'Широкий выбор объектов инвестирования',
+                        'text'  => 'От предприятий малого и среднего бизнеса до государственных облигаций'
+                    )
+                );
+                foreach ($arr_preim as $item_p)  {
+                ?>
+                <div class="col-xl-4">
+                    <div>                        
+                        <img src="<?=$item_p['img']?>">
+                        <h3><?=$item_p['title']?></h3>
+                        <p><?=$item_p['text']?></p>
+                    </div>                        
                 </div>
-                <div class="col-xl-6">
-                        <div style="border: 1px solid #dddddd; height: 167px;border-radius: 5px;">
-                            <div class="row">
-                                <div class="col-xl-4 col-sm-4">
-                                    <img src="img/fin_ico_pre.png">
-                                </div>    
-                                <div class="col-xl-8 col-sm-8 pre_text">
-                                    <h3>БЫСТРОЕ ФИНАНСИРОВАНИЕ БЕЗ ЗАЛОГА</h3>
-                                        <p>Сроки привличения средств от 1 месяца.</p>
-                                </div>
-                            </div>
-                        </div>
-                </div>
+                <?php } ?>                
             </div>
         </div>
         <!--Блок о сервисе-->
         <div class="container blok_pre">
             <div class="row">
                 <div class="col-xl-12 col-sm-12">
-                    <div class="rounded button_os"><span class="bt_sr_active">О сервисе</span><span>Особенности сервиса</span></div>
+                    <div class="rounded button_os"><span class="bt_sr_active"><span id="romb"></span>О сервисе</span><span><span id="romb"></span>Особенности сервиса</span></div>
                 </div>
             </div>
             <div class="row">
@@ -130,7 +152,7 @@
             </div>
         </div>
         <!--Блок с проектами-->
-        <div class="container">
+        <div class="container projects">
                 <div class="row">
                     <div class="col-xl-12 col-sm-12">
                         <h2 class="text-center head_block">ПРОЕКТЫ</h2>
@@ -146,12 +168,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row main_list_proekt">
-                    <div class="col-xl-12 col-sm-12">
+        </div>
+        <div class="container" style="overflow: hidden; position: relative;height: 480px;">
+                <div class="main_list_proekt">                    
                         <?php 
                             $arr = array(
                                 array('КОФЕЙНЯ', 'img/proekt1.jpg'),
                                 array('Перерабатывающий комплекс', 'img/proekt2.jpg'),
+                                array('Добыча песка на речном карьере', 'img/proekt3.jpg'),
+                                array('Сервис электронных платежей', 'img/proekt4.jpg'),
                                 array('Добыча песка на речном карьере', 'img/proekt3.jpg'),
                                 array('Сервис электронных платежей', 'img/proekt4.jpg')
                             );
@@ -170,8 +195,11 @@
                                 </div>
                             </div>
                         <?php } ?>
-                    </div>
+                    
+                
                 </div>
+        </div>
+        <div class="container projects">
                 <div class="row text-center">
                         <p style="display: inline-block;margin: 32px auto;font-size: 1.1rem;"><a href="#">Зарегистрируйтесь,</a> чтобы увидеть больше компаний.</p>
                 </div>
@@ -195,7 +223,7 @@
                 </div>
             <div class="row">
                     <div class="col-xl-6 col-sm-1">
-                        <img class="slayd rounded" src="img/sld_oserv2.jpg" alt="Зберополис инвестиционный сервис" />
+                        <img class="slayd rounded" src="img/sld_oserv2.png" alt="Зберополис инвестиционный сервис" />
                     </div>
                     <div class="col-xl-6 col-sm-1 box_investr">
                         <h2>Для инвесторов</h2>
@@ -207,7 +235,7 @@
             </div>
         </div>
         <!--Блок регистрация/авторизация-->
-        <div class="container">
+        <div class="container autorisation">
             <div class="row">
                 <div class="col-xl-12">
                     <h2 class="text-center head_block">Регистрация/Вход</h2>
@@ -215,7 +243,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-12 col-sm-12">
-                    <div class="rounded button_os"><span class="bt_sr_active">Инвестор</span><span>Эмитент</span></div>
+                    <div class="rounded button_os"><span class="bt_sr_active"><span id="romb"></span>Инвестор</span><span><span id="romb"></span>Эмитент</span></div>
                 </div>
             </div>
             <div class="row">
@@ -313,3 +341,4 @@
         </footer>
     </body>
 </html>
+                    <?php } ?>
