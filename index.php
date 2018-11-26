@@ -1,5 +1,4 @@
 <?php 
-
 if(!isset($_COOKIE['tryUser'])) {
     
     if(isset($_POST['codeUser'])){
@@ -47,22 +46,22 @@ if(!isset($_COOKIE['tryUser'])) {
                     <div class="col-xl-8 main_menu_box">
                         <ul class="nav main_menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="active">ГЛАВНАЯ</span></a>
+                                <a class="nav-link" href="index.php"><span class="active">ГЛАВНАЯ</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">О ПРОЕКТЕ</a>
+                                <a class="nav-link" href="projekt.php">О ПРОЕКТЕ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ИНВЕСТОРУ</a>
+                                <a class="nav-link" href="investor.php">ИНВЕСТОРУ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ЭМИТЕНТУ</a>
+                                <a class="nav-link" href="emitent.php">ЭМИТЕНТУ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ПОМОЩЬ</a>
+                                <a class="nav-link" href="help.php">ПОМОЩЬ</a>
                             </li>
                         </ul>
-                        <button type="button" class="btn btn-outline-secondary float-right">ВХОД/РЕГИСТРАЦИЯ</button>
+                        <a href="reg.php" class="btn btn-outline-secondary float-right">ВХОД/РЕГИСТРАЦИЯ</a>
                     </div>                
             </div>
         </div>
@@ -169,7 +168,7 @@ if(!isset($_COOKIE['tryUser'])) {
                     </div>
                 </div>
         </div>
-        <div class="container" style="overflow: hidden; position: relative;height: 480px;">
+        <div class="container" style="overflow: hidden; position: relative;height: 480px;padding-top: 5px;">
                 <div class="main_list_proekt">                    
                         <?php 
                             $arr = array(
