@@ -1,3 +1,144 @@
+body{
+    font-weight: 300;
+    font-family: Roboto, serif;
+}
+.btn{
+    font-weight: 300;
+}
+.btn-primary{
+    background-color: #8e26b8;
+}
+.btn-dark{
+    background-color: #1f1f1f;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.btn-dark:hover{
+    background-color: #ffffff;
+    border-color: #1f1f1f;
+    color: #1f1f1f;
+}
+.gray_text{
+    color: #8e8e8e;
+}
+/* --- Navbar --- */
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 3px solid #ffffff;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    border-bottom: 3px solid #8e26b8;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    border-bottom: 3px solid #8e26b8;
+}
+.btn-profile-login{
+    font-size: 12px;
+    color: #000;
+    width: 83px;
+}
+.btn-profile-login:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 16px;
+    background: url(img/profile-login-icon.png) no-repeat;
+    right: 8px;
+    float: left;
+}
+.navbar-underline{
+    border-bottom: 1px solid #dddddd;
+}
+/* --- Navbar --- */
+/* --- Zaemshik --- */
+.zaemshik-banner{
+    background-color: #1f1f1f;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+.zaemshik-banner .container .row{
+    min-height: 198px;
+}
+.zaemshik-banner .zaemshik-banner-name{
+    font-size: 36px;
+    display: block;
+}
+.zaemshik-banner .zaemshik-banner-rate, .zaemshik-banner .zaemshik-banner-date{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+.zaemshik-banner .zaemshik-banner-date{
+    margin-left: 35px;
+}
+.zaemshik-banner .zaemshik-banner-rate:before{
+    content: "";
+    background: url("img/percent-circle-outline.png") no-repeat;
+    height: 39px;
+    width: 40px;
+    position: absolute;
+    left: -50px;
+    top: 8px;
+}
+.zaemshik-banner .zaemshik-banner-rate span, .zaemshik-banner .zaemshik-banner-date span{
+    font-size: 24px;
+    font-weight: normal;
+}
+.zaemshik-description h1{
+    font-size: 28px;
+}
+.zaemshik-description h2{
+    font-size: 36px;
+    margin-top: 75px;
+    font-weight: 300;
+}
+.zaemshik-description h3{
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.zaemshik-description .zaemshik-description-portret{
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+}
+.zaemshik-description .zaemshik-description-fio{
+    font-size: 36px;
+}
+.zaemshik-description .zaemshik-description-raiting span{
+    color: #8e26b8;
+    font-weight: 500;
+}
+.zaemshik-description .zaemshik-description-fi{
+    margin-top: 30px;
+}
+.zaemshik-description ol {
+    counter-reset: myCounter;
+    list-style: none;
+}
+
+.zaemshik-description ol > li::before {
+    content: counter( myCounter ) ') ';
+    counter-increment: myCounter;
+}
+.zaemshik-description  li{
+    margin-bottom: 20px;
+    margin-left: -40px;
+}
+.zaemshik-resume-company{
+    background-color: #f6f7f8;
+    border-bottom: 1px solid #dddddd;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.zaemshik-footer-tel .zaemshik-footer-tel-numb{
+    font-size: 30px;
+    display: block;
+}
+
+/* --- Zaemshik --- */
 h2.head_block {
     margin: 35px 0 11px 0 !important;
     font-size: 2.3rem;
@@ -114,9 +255,8 @@ div.button_os .bt_sr_active #romb {
 }
 /*блок главной преимущества*/
 .blok_pre img{
-    margin: auto;
     display: block;
-    margin-bottom: 20px;
+    margin: auto auto 20px;
 }
 
 .blok_pre .pre_text {
@@ -270,6 +410,7 @@ footer .bottom_footer{
 
 footer .bottom_footer img{
     margin-top: 7px;
+    max-width: 100%;
 }
 
 footer .bottom_footer button {
