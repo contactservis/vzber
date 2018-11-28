@@ -15,8 +15,9 @@ if(!isset($_COOKIE['tryUser'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Зберополис</title>
+        <title>Zберополис - онлайн площадка для привлечения инвестиций в малый и средний бизнес</title>
         <meta charset="utf-8"/>
+        <meta name="description" content="Сервис, позволяющий физическим лицам инвестировать в малый и средний бизнес через брокера - лицензированного участника рынка ценных бумаг." />
         <link rel="stylesheet" href="fonts/roboto.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/css.css">
