@@ -256,7 +256,10 @@ if(!isset($_COOKIE['tryUser'])) {
     slider2.on("slide", function(sliderValue) {
         document.getElementById("percent-val").textContent = sliderValue;
     });
-</script>
+</script><pre>
+<?php
+var_dump($_SERVER);
+?></pre>
 </body>
 </html>
 <?php } ?>

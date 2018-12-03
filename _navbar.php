@@ -31,32 +31,29 @@
         </nav>
     </div>
 </div>
+<?php
+
+$menu = ["ОБЪЕКТЫ ЗАЙМА"=>"/obekty-zajma.php",
+        "РИОБРЕТЕННЫЕ ОБЬЕКТЫ ЗАЙМА"=>"#",
+        "ЗАЕМЩИК"=>"/zaemshik.php",
+        "ЛИЧНЫЙ СЧЕТ"=>"#",
+        "ПОКАЗАТЕЛЬ ИНВЕСТОРА"=>"#",
+        "СООБЩЕНИЯ"=>"#",
+        "СДЕЛКИ"=>"#"];
+
+
+?>
 <div class="navbar-bottom">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="obekty-zajma.php">ОБЬЕКТЫ ЗАЙМА</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ПРИОБРЕТЕННЫЕ ОБЬЕКТЫ ЗАЙМА</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="zaemshik.php">ЗАЕМЩИК</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ЛИЧНЫЙ СЧЕТ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ПОКАЗАТЕЛЬ ИНВЕСТОРА</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">СООБЩЕНИЯ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">СДЕЛКИ</a>
-                    </li>
+                <?php
+                    foreach ($menu as $title=>$url) {
+                        $class = strpos($_SERVER["REQUEST_URI"], $url) !== false ? "active" : "";
+                        echo "<li class=\"nav-item $class\"><a class=\"nav-link\" href=\"$url\">$title</a></li>";
+                    }
+                ?>
                 </ul>
                 <a href="#" class="btn-profile-login my-2 my-sm-0">ПРОФИЛЬ</a>
             </div>
