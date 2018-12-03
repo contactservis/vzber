@@ -44,7 +44,7 @@ if(!isset($_COOKIE['tryUser'])) {
 <?php require_once '_navbar.php';?>
 <div class="obj-zai-top">
     <div class="container">
-        <h1>Объекты займа</h1>
+        <h1>Объекты инвестирования</h1>
         <button class="btn btn-link">Фильтр</button>
     </div>
 </div>
@@ -53,7 +53,7 @@ if(!isset($_COOKIE['tryUser'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <label for="name">Наименование заемщика</label>
+                <label for="name">Наименование Эмитента</label>
                 <input type="text" name="name" id="name" placeholder="Наименование">
                 <label for="price">По конечной сумме займа</label>
                 <span class="float-right">До <span id="price-val">31 000 000</span> Р</span>

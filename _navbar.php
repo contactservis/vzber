@@ -37,13 +37,13 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="obekty-zajma.php">ОБЬЕКТЫ ЗАЙМА</a>
+                        <a class="nav-link" href="obekty-zajma.php">ОБЬЕКТЫ Инвестирования</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ПРИОБРЕТЕННЫЕ ОБЬЕКТЫ ЗАЙМА</a>
+                        <a class="nav-link" href="#">ПРИОБРЕТЕННЫЕ ОБЬЕКТЫ Инвестирования</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="zaemshik.php">ЗАЕМЩИК</a>
+                        <a class="nav-link" href="zaemshik.php">Эмитент</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ЛИЧНЫЙ СЧЕТ</a>

@@ -94,6 +94,9 @@ h3{
 .navbar-bottom .btn-profile-login{
     font-weight: 500;
 }
+.navbar-bottom ul.navbar-nav{
+    text-transform: uppercase;
+}
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, 1);
     border-bottom: 3px solid #ffffff;

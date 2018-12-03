@@ -84,7 +84,7 @@ if(!isset($_COOKIE['tryUser'])) {
 <!--Содержание-->
 <div class="zaemshik-description">
     <div class="container">
-        <h1>Заемщик</h1>
+        <h1>Эмитент</h1>
         <div class="row">
             <div class="col-md-4">
                 <img class="zaemshik-description-portret d-block" src="img/example-portret-man.jpg" alt="">
