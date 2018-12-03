@@ -2,6 +2,41 @@ body{
     font-weight: 300;
     font-family: Roboto, serif;
 }
+h1{
+    font-size: 28px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 24px;
+    font-weight: 300;
+}
+.slider.slider-horizontal {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 48px;
+}
+.slider.slider-horizontal .slider-track {
+    height: 5px;
+}
+.slider-track-high{
+    background: #ebebeb;
+    border-radius: 0;
+}
+.slider-selection{
+    background: #8c32bc;
+    border-radius: 0;
+}
+.slider-handle {
+    position: absolute;
+    top: -3px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff none;
+    -webkit-box-shadow: 1px 1px 4px 1px rgba(0,0,0,.5);
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,.5);
+}
 .btn{
     font-weight: 300;
 }
@@ -18,10 +53,47 @@ body{
     border-color: #1f1f1f;
     color: #1f1f1f;
 }
+.btn-light {
+    color: #8e26b8;
+    border-color: #8e26b8;
+    background-color: #ffffff;
+}
+.btn-link {
+    color: #8e26b8;
+    padding: 4px 0;
+}
+.btn-light:hover {
+    color: #ffffff;
+    border-color: #8e26b8;
+    background-color: #8e26b8;
+}
 .gray_text{
     color: #8e8e8e;
 }
 /* --- Navbar --- */
+.navbar{
+    padding: 0;
+}
+.navbar-top, .navbar-bottom{
+    border-bottom: 1px solid #dddddd;
+}
+.navbar-top .nav-link {
+    padding: 1.8rem 1rem;
+}
+.navbar-top button.btn-primary {
+    width: 212px;
+    font-weight: 200;
+}
+.navbar-bottom .nav-link {
+    padding: 1rem 1rem;
+}
+.navbar-bottom{
+    font-size: 12px;
+    font-weight: 500;
+}
+.navbar-bottom .btn-profile-login{
+    font-weight: 500;
+}
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, 1);
     border-bottom: 3px solid #ffffff;
@@ -47,10 +119,138 @@ body{
     right: 8px;
     float: left;
 }
-.navbar-underline{
-    border-bottom: 1px solid #dddddd;
-}
 /* --- Navbar --- */
+
+/* --- Foter --- */
+.footer-tel-gray{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.footer-tel-white{
+    background-color: #ffffff;
+    text-align: right;
+}
+.footer-tel-numb{
+    font-size: 30px;
+    display: block;
+}
+/* --- Foter --- */
+
+/* --- Obekty-zajma --- */
+.obj-zai-top{
+    margin-top: 35px;
+}
+.obj-zai-top h1{
+    display: inline-block;
+}
+.obj-zai-top button{
+    float: right;
+    position: relative;
+}
+.obj-zai-top button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -42px;
+    background-image: url(img/filter-icon.png);
+    width: 24px;
+    height: 19px;
+}
+.obj-zai-filter{
+    margin-top: 30px;
+}
+.obj-zai-filter label{
+    display: block;
+}
+.obj-zai-filter input {
+    height: 59px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-weight: 300;
+    margin-top: 7px;
+    margin-bottom: 25px;
+}
+#name, #keyword{
+    width: 100%;
+    padding-left: 24px;
+}
+#day{
+    width: calc(25% - 22px);
+    margin-left: 21px;
+    margin-right: 7px;
+    text-align: center;
+}
+#month{
+    width: calc(25% - 22px);
+    margin-left: 7px;
+    margin-right: 7px;
+    text-align: center;
+}
+#year{
+    width: calc(50% - 60px);
+    margin-left: 9px;
+    text-align: center;
+}
+.obj-zai{
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding-bottom: 11px;
+}
+.obj-zai:hover {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.obj-zai .obj-zai-img img{
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+}
+.obj-zai-text{
+    padding: 12px 20px;
+}
+.obj-zai-desc {
+    margin-top: 19px;
+    font-size: 14px;
+    margin-bottom: 19px;
+}
+.obj-zai-date {
+    font-size: 14px;
+    display: inline-block;
+}
+.obj-zai-desc-left, .obj-zai-desc-right{
+    display: inline-block;
+}
+.obj-zai-desc-left {
+    position: relative;
+    margin-left: 45px;
+    margin-right: 29px;
+}
+.obj-zai-desc-left:before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(img/percent-circle-outline-blue.png);
+    width: 36px;
+    height: 35px;
+    top: 0px;
+    right: 54px;
+}
+.obj-zai-desc-right{
+    border-left: 1px solid #dddddd;
+    padding-left: 22px;
+}
+.obj-zai-text .font-weight-bold{
+    font-size: 16px;
+}
+.obj-zai-text button{
+    vertical-align: top;
+    float: right;
+    padding: 9px 24px;
+}
+
+/* --- Obekty-zajma --- */
+
 /* --- Zaemshik --- */
 .zaemshik-banner{
     background-color: #1f1f1f;
@@ -84,9 +284,6 @@ body{
 .zaemshik-banner .zaemshik-banner-rate span, .zaemshik-banner .zaemshik-banner-date span{
     font-size: 24px;
     font-weight: normal;
-}
-.zaemshik-description h1{
-    font-size: 28px;
 }
 .zaemshik-description h2{
     font-size: 36px;
@@ -132,10 +329,6 @@ body{
     border-bottom: 1px solid #dddddd;
     padding-top: 40px;
     padding-bottom: 40px;
-}
-.zaemshik-footer-tel .zaemshik-footer-tel-numb{
-    font-size: 30px;
-    display: block;
 }
 
 /* --- Zaemshik --- */
@@ -439,4 +632,10 @@ footer .box_footer_podpiska h4 {
     padding: 6px 33px 4px 33px;
     color: #fff;
     background: #8e26b8; 
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
 }

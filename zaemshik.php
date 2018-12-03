@@ -62,72 +62,10 @@ if(!isset($_COOKIE['tryUser'])) {
     </div>
 </div>
 <!--навигационная панель-->
-<div class="navbar-underline">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" width="260" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О проекте</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Инвестору</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Эмитенту</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Помощь</a>
-                    </li>
-                </ul>
-                <button class="btn btn-primary my-2 my-sm-0" type="submit">Личный кабинет</button>
-            </div>
-        </nav>
-    </div>
-</div>
-<div class="navbar-underline">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto" style="font-size: 12px">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ОБЬЕКТЫ ЗАЙМА</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ПРИОБРЕТЕННЫЕ ОБЬЕКТЫ ЗАЙМА</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">ЗАЕМЩИК</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ЛИЧНЫЙ СЧЕТ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ПОКАЗАТЕЛЬ ИНВЕСТОРА</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">СООБЩЕНИЯ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">СДЕЛКИ</a>
-                    </li>
-                </ul>
-                <a href="#" class="btn-profile-login my-2 my-sm-0">ПРОФИЛЬ</a>
-            </div>
-        </nav>
-    </div>
-</div>
-<!--Большой рекламный слайдер-->
+<?php require_once '_navbar.php';?>
+
+<!--Банер-->
 <div class="zaemshik-banner">
     <div class="container">
         <div class="row align-items-center">
@@ -149,7 +87,7 @@ if(!isset($_COOKIE['tryUser'])) {
         <h1>Заемщик</h1>
         <div class="row">
             <div class="col-md-4">
-                <img class="zaemshik-description-portret d-block" src="img/sample-portret-man.jpg" alt="">
+                <img class="zaemshik-description-portret d-block" src="img/example-portret-man.jpg" alt="">
                 <span class="zaemshik-description-fio">Лупенко Владимир Владимирович</span>
                 <span class="zaemshik-description-raiting d-block">Рейтинг: <span>5.1</span></span>
             </div>
@@ -193,17 +131,17 @@ if(!isset($_COOKIE['tryUser'])) {
                 <h3>Сотрудники</h3>
                 <div class="row">
                     <div class="col-sm-4 text-center">
-                        <img class="zaemshik-description-portret" src="img/sample-portret-man.jpg" alt="">
+                        <img class="zaemshik-description-portret" src="img/example-portret-man.jpg" alt="">
                         <span class="zaemshik-description-fi d-block">Андрей Жирных</span>
                         <span class="zaemshik-description-post d-block gray_text">Генеральный директор</span>
                     </div>
                     <div class="col-sm-4 text-center">
-                        <img class="zaemshik-description-portret" src="img/sample-portret-man.jpg" alt="">
+                        <img class="zaemshik-description-portret" src="img/example-portret-man.jpg" alt="">
                         <span class="zaemshik-description-fi d-block">Дмитрий Плущевский</span>
                         <span class="zaemshik-description-post d-block gray_text">Директор по развитию</span>
                     </div>
                     <div class="col-sm-4 text-center">
-                        <img class="zaemshik-description-portret" src="img/sample-portret-man.jpg" alt="">
+                        <img class="zaemshik-description-portret" src="img/example-portret-man.jpg" alt="">
                         <span class="zaemshik-description-fi d-block">Андрей Жирных</span>
                         <span class="zaemshik-description-post d-block gray_text">Директор</span>
                     </div>
@@ -271,12 +209,12 @@ if(!isset($_COOKIE['tryUser'])) {
 </div>
 <!--Подвал-->
 <footer>
-    <div class="zaemshik-footer-tel">
+    <div class="footer-tel-white">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 text-right tel_box">
-                    <span class="zaemshik-footer-tel-numb">8(800) 000 00 00</span>
-                    <span class="gray_text">Бесплатно по России</span>
+                <div class="col-xl-12 tel_box">
+                    <span class="footer-tel-numb">8(800) 000 00 00</span>
+                    <span class="footer-tel-text">Бесплатно по России</span>
                 </div>
             </div>
         </div>
