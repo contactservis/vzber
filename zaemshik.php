@@ -16,7 +16,7 @@ if(!isset($_COOKIE['tryUser'])) {
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Заемщик - Зберополис</title>
+    <title>Эмитент - Зберополис</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="fonts/roboto.css">
     <link rel="stylesheet" href="css/bootstrap.css">

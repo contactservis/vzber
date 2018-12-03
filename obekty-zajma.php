@@ -16,7 +16,7 @@ if(!isset($_COOKIE['tryUser'])) {
 <html lang="ru">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Объекты займа - Зберополис</title>
+    <title>Объекты инвестирования - Зберополис</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="fonts/roboto.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -256,10 +256,7 @@ if(!isset($_COOKIE['tryUser'])) {
     slider2.on("slide", function(sliderValue) {
         document.getElementById("percent-val").textContent = sliderValue;
     });
-</script><pre>
-<?php
-var_dump($_SERVER);
-?></pre>
+</script>
 </body>
 </html>
 <?php } ?>
