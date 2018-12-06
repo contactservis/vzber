@@ -16,7 +16,7 @@
             <h2 class="text-center">Эта версия сайта для разработки</h2>            
                 <div class="panel panel-default" style="margin-top:50px;">
                     <div class="panel-body">
-                        <form role="form" action="<?=$_SERVER[PHP_SELF]?>" method="post">
+                        <form role="form"  method="post">
                             <input type='text' class="form-control" name="codeUser" style="float:left; width:69%; margin-right:23px;">
                             <button type="submit" class="btn btn-default">Войти</button>
                         </form>
