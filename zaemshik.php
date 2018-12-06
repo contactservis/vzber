@@ -66,16 +66,16 @@ if(!isset($_COOKIE['tryUser'])) {
 <?php require_once '_navbar.php';?>
 
 <!--Банер-->
-<div class="zaemshik-banner">
+<div class="top-banner">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-left">
-                <span class="zaemshik-banner-name">Little Gentrys</span>
-                <span class="zaemshik-banner-description">интернет магазин детской одежды и обуви</span>
+                <span class="top-banner-name">Little Gentrys</span>
+                <span class="top-banner-description">интернет магазин детской одежды и обуви</span>
             </div>
             <div class="col-md-6 text-center text-md-right">
-                <span class="zaemshik-banner-rate">Ставка<br><span>7,52%</span></span>
-                <span class="zaemshik-banner-date">Срок погашения<br><span>21.12.2018</span></span>
+                <span class="top-banner-rate">Ставка<br><span>7,52%</span></span>
+                <span class="top-banner-date">Срок погашения<br><span>21.12.2018</span></span>
                 <div><button class="btn btn-dark">Написать сообщение</button></div>
             </div>
         </div>

@@ -67,6 +67,11 @@ h3{
     border-color: #8e26b8;
     background-color: #8e26b8;
 }
+.btn-standart{
+    width: 263px;
+    height: 43px;
+    max-width: 100%;
+}
 .gray_text{
     color: #8e8e8e;
 }
@@ -123,6 +128,58 @@ h3{
     float: left;
 }
 /* --- Navbar --- */
+/* --- Top banner --- */
+.top-banner{
+    background-color: #1f1f1f;
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding: 25px 0;
+}
+.top-banner .container .row{
+    min-height: 148px;
+}
+.top-banner .top-banner-name{
+    font-size: 36px;
+    display: block;
+}
+.top-banner .top-banner-rate, .top-banner .top-banner-date{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+.top-banner .top-banner-date{
+    margin-left: 35px;
+}
+.top-banner .top-banner-rate:before{
+    content: "";
+    background: url("img/percent-circle-outline.png") no-repeat;
+    height: 39px;
+    width: 40px;
+    position: absolute;
+    left: -50px;
+    top: 8px;
+}
+.top-banner .top-banner-rate span, .top-banner .top-banner-date span{
+    font-size: 24px;
+    font-weight: normal;
+}
+.top-banner .top-banner-price{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.top-banner .top-banner-price span{
+    font-size: 24px;
+}
+.top-banner .top-banner-button{
+    margin-top: 22px;
+}
+.top-banner .top-banner-button button{
+    width: 263px;
+    height: 43px;
+}
+
+/* --- Top banner --- */
 
 /* --- Foter --- */
 .footer-tel-gray{
@@ -138,6 +195,115 @@ h3{
     display: block;
 }
 /* --- Foter --- */
+
+
+/* --- lichny-schet --- */
+.lichny-schet h1{
+    margin-bottom: 36px;
+}
+.lichny-schet-emitent{
+    padding-bottom: 65px;
+    margin-bottom: 75px;
+    border-bottom: 1px solid #dddddd;
+}
+.lichny-schet-emitent .lichny-schet-img{
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 34px;
+}
+.lichny-schet .lichny-schet-emitent-header button{
+    margin-top: 2px;
+    height: 43px;
+}
+.lichny-schet .lichny-schet-emitent-header button:nth-of-type(1){
+    width: 164px;
+    margin-right: 15px;
+}
+.lichny-schet .lichny-schet-emitent-header button:nth-of-type(2){
+    width: 263px;
+}
+.lichny-schet .lichny-schet-emitent-header{
+    margin-bottom: 37px;
+}
+.lichny-schet .lichny-schet-stavka{
+    position: relative;
+    margin-left: 45px;
+    display: block;
+}
+.lichny-schet .lichny-schet-stavka::before{
+    content: "";
+    background-image: url("img/percent-circle-outline-blue.png");
+    width: 36px;
+    height: 35px;
+    position: absolute;
+    left: -45px;
+    top: 6px;
+}
+.lichny-schet .lichny-schet-stavka span, .lichny-schet .lichny-schet-sum-invest span, .lichny-schet .lichny-schet-srok span{
+    font-size: 24px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.lichny-schet .lichny-schet-vyplata{
+    font-size: 24px;
+    margin-top: 17px;
+}
+.lichny-schet .lichny-schet-vyplata > .float-left{
+    color: #8c32bc;
+    font-weight: 500;
+}
+.lichny-schet .progress{
+    width: 100%;
+}
+.lichny-schet  .lichny-schet-sum-post-price, .lichny-schet .lichny-schet-sum-zadol-price{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.lichny-schet  .lichny-schet-sum-post-price{
+    color: #8c32bc;
+}
+.lichny-schet .lichny-schet-sum-zadol-price{
+    color: #fe9300;
+}
+.lichny-schet  .lichny-schet-sum-post-price span, .lichny-schet .lichny-schet-sum-zadol-price span{
+    font-size: 24px;
+}
+.lichny-schet .lichny-schet-progress-viplacheno{
+    height: 11px;
+    margin-top: 44px;
+    margin-bottom: 35px;
+}
+.lichny-schet .lichny-schet-progress-viplacheno .progress-bar{
+    background-color: #8c32bc;
+}
+.lichny-schet .lichny-schet-progress-ostatok{
+    height: 32px;
+    background-color: unset;
+    background-image: url("img/progress-bar-oval-sprite.png");
+    background-position: 0 -32px;
+    background-repeat: repeat-x;
+    margin-top: 2px;
+    margin-bottom: 13px;
+}
+.lichny-schet .lichny-schet-progress-ostatok .progress-bar{
+    background-color: unset;
+    background-image: url("img/progress-bar-oval-sprite.png");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+}
+.lichny-schet-operation{
+    padding-bottom: 21px;
+}
+.lichny-schet .lichny-schet-operation-price{
+    color: #8c32bc;
+    white-space: nowrap;
+}
+/* --- lichny-schet --- */
 
 /* --- Obekty-zajma --- */
 .obj-zai-top{
@@ -236,7 +402,7 @@ h3{
     background-image: url(img/percent-circle-outline-blue.png);
     width: 36px;
     height: 35px;
-    top: 0px;
+    top: 0;
     right: 54px;
 }
 .obj-zai-desc-right{
@@ -251,43 +417,39 @@ h3{
     float: right;
     padding: 9px 24px;
 }
-
+.buy-obj-zai{
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: calc(100% - 25px);
+    background-color: unset;
+    position: relative;
+    min-height: 424px;
+}
+.buy-obj-zai:hover{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.buy-obj-zai::before{
+    content: "";
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    background-image: url("img/object-invest-plus.png");
+    top: calc(50% - 42px);
+    left: calc(50% - 42px);
+}
+.buy-obj-zai::after{
+    content: "Приобрести объект инвестирования";
+    position: absolute;
+    top: calc(50% - -50px);
+    left: 0;
+    color: #a8a8a8;
+    width: 100%;
+}
 /* --- Obekty-zajma --- */
 
 /* --- Zaemshik --- */
-.zaemshik-banner{
-    background-color: #1f1f1f;
-    color: #ffffff;
-    margin-bottom: 35px;
-}
-.zaemshik-banner .container .row{
-    min-height: 198px;
-}
-.zaemshik-banner .zaemshik-banner-name{
-    font-size: 36px;
-    display: block;
-}
-.zaemshik-banner .zaemshik-banner-rate, .zaemshik-banner .zaemshik-banner-date{
-    display: inline-block;
-    position: relative;
-    text-align: left;
-}
-.zaemshik-banner .zaemshik-banner-date{
-    margin-left: 35px;
-}
-.zaemshik-banner .zaemshik-banner-rate:before{
-    content: "";
-    background: url("img/percent-circle-outline.png") no-repeat;
-    height: 39px;
-    width: 40px;
-    position: absolute;
-    left: -50px;
-    top: 8px;
-}
-.zaemshik-banner .zaemshik-banner-rate span, .zaemshik-banner .zaemshik-banner-date span{
-    font-size: 24px;
-    font-weight: normal;
-}
 .zaemshik-description h2{
     font-size: 36px;
     margin-top: 75px;
