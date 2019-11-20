@@ -12,6 +12,10 @@ h3{
     font-size: 24px;
     font-weight: 300;
 }
+.w-261{
+    width: 261px;
+    max-width: 100%;
+}
 .slider.slider-horizontal {
     width: 100%;
     margin-top: 10px;
@@ -74,6 +78,18 @@ h3{
 }
 .gray_text{
     color: #8e8e8e;
+}
+.video-frame{
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+}
+.video-frame iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 /* --- Navbar --- */
 .navbar{
