@@ -19,11 +19,9 @@ if(!isset($_COOKIE['tryUser'])) {
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="fonts/roboto.css">
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.zberopolis.css">
         <link rel="stylesheet" href="css/css.css">
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>        
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>      
     </head>
     <body>
         <!--Шапка с телефоном-->
@@ -98,19 +96,9 @@ if(!isset($_COOKIE['tryUser'])) {
                         <h2 class="text-center head_block">ПРОЕКТЫ</h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-12 col-sm-12">
-                        <div class="pic_box">
-                            <div class="active_cir float-left" data="f"></div>
-                            <div class="float-left" data="f"></div>
-                            <div class="float-left" data="f"></div>
-                            <div class="float-left" data="f"></div>                                                              
-                        </div>
-                    </div>
-                </div>
         </div>
-        <div class="container" style="overflow: hidden; position: relative;height: 480px; padding-top: 5px;">
-                <div class="main_list_proekt">                    
+        <div class="container mt-2">
+                <div class="main_list_proekt owl-carousel owl-theme-zber">
                         <?php 
                             $arr = array(
                                 array('КОФЕЙНЯ', 'img/proekt1.jpg'),
@@ -287,6 +275,31 @@ if(!isset($_COOKIE['tryUser'])) {
                 </div>
             </div>
         </footer>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            window.onload = function() {
+                $('.main_list_proekt').owlCarousel({
+                    loop:false,
+                    margin:10,
+                    nav:false,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:2
+                        },
+                        1000:{
+                            items:3
+                        }
+                    }
+                })
+            };
+        </script>
     </body>
 </html>
 
