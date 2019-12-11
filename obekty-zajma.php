@@ -45,7 +45,7 @@ if(!isset($_COOKIE['tryUser'])) {
 <div class="obj-zai-top">
     <div class="container">
         <h1>Объекты инвестирования</h1>
-        <button class="btn btn-link">Фильтр</button>
+        <button class="btn btn-link btn-filter">Фильтр</button>
     </div>
 </div>
 <!--Фильтры-->
@@ -255,6 +255,9 @@ if(!isset($_COOKIE['tryUser'])) {
     var slider2 = new Slider("#percent");
     slider2.on("slide", function(sliderValue) {
         document.getElementById("percent-val").textContent = sliderValue;
+    });
+    $('.btn-filter').click(function () {
+        $('.obj-zai-filter').slideToggle();
     });
 </script>
 </body>

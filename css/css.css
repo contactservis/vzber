@@ -361,6 +361,7 @@ input[type=checkbox]:checked + label:after {
 /* --- Obekty-zajma --- */
 .obj-zai-top{
     margin-top: 35px;
+    margin-bottom: 30px;
 }
 .obj-zai-top h1{
     display: inline-block;
@@ -369,7 +370,7 @@ input[type=checkbox]:checked + label:after {
     float: right;
     position: relative;
 }
-.obj-zai-top button::before {
+.obj-zai-top .btn-filter::before {
     content: "";
     display: block;
     position: absolute;
@@ -380,7 +381,7 @@ input[type=checkbox]:checked + label:after {
     height: 19px;
 }
 .obj-zai-filter{
-    margin-top: 30px;
+    display: none;
 }
 .obj-zai-filter label{
     display: block;
