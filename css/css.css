@@ -16,6 +16,42 @@ h3{
     width: 261px;
     max-width: 100%;
 }
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 130%;
+    margin-top: 11px;
+}
+input[type=checkbox] + label:before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+input[type=checkbox]:checked + label:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-bottom: 1px solid #8e26b8;
+    border-right: 1px solid #8e26b8;
+    position: absolute;
+    left: 7px;
+    top: 2px;
+}
 .slider.slider-horizontal {
     width: 100%;
     margin-top: 10px;
@@ -61,6 +97,7 @@ h3{
     color: #8e26b8;
     border-color: #8e26b8;
     background-color: #ffffff;
+    color: #000000;
 }
 .btn-link {
     color: #8e26b8;
