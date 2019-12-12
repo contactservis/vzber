@@ -16,6 +16,68 @@ h3{
     width: 261px;
     max-width: 100%;
 }
+.tl-h1{
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+.tl-h2{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 34px;
+}
+.tl-h3{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+}
+.tl-h4{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+}
+.tb-h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+}
+.tb-h3{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+}
+.tb-h4{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+}
+::-webkit-input-placeholder {color:#9d9d9d;}
+::-moz-placeholder          {color:#9d9d9d;}/* Firefox 19+ */
+:-moz-placeholder           {color:#9d9d9d;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#9d9d9d;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+input[type="date"]::-webkit-inner-spin-button { display: none; }
+input[type="text"], input[type="password"], textarea, input[type="date"], input[type="email"]{
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 17px;
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, input[type="date"]:focus, input[type="email"]:focus{
+    border: 1px solid #8e26b8;
+    outline: none;
+}
+input[type="text"]:invalid, input[type="password"]:invalid, textarea:invalid, input[type="date"]:invalid, input[type="email"]:invalid{
+    border: 1px solid #F01B1B;
+}
+input[type="text"]:disabled, input[type="password"]:disabled, textarea:disabled, input[type="date"]:disabled, input[type="email"]:disabled{
+    background: #f7f7f7;
+    border: 1px solid #d6d6d6;
+}
 input[type=checkbox] {
     display: none;
 }
@@ -33,12 +95,15 @@ input[type=checkbox] + label:before {
     display: block;
     width: 18px;
     height: 18px;
-    border: 1px solid #D6D6D6;
+    border: 1px solid #d6d6d6;
     box-sizing: border-box;
     border-radius: 6px;
     position: absolute;
     left: 0;
     top: 0;
+}
+input[type=checkbox]:disabled + label:before {
+    background-color: #f7f7f7;
 }
 input[type=checkbox]:checked + label:after {
     content: "";
@@ -51,6 +116,50 @@ input[type=checkbox]:checked + label:after {
     position: absolute;
     left: 7px;
     top: 2px;
+}
+.btn{
+    font-weight: 300;
+    padding: 9px 0.75rem;
+}
+.btn:active{
+    background-color: #ab9db8;
+}
+.btn-gray{
+    border: 1px solid #d6d6d6;
+    background-color: #ffffff;
+}
+.btn-primary{
+    background-color: #8e26b8;
+}
+.btn-dark{
+    background-color: #1f1f1f;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.btn-dark:hover{
+    background-color: #ffffff;
+    border-color: #1f1f1f;
+    color: #1f1f1f;
+}
+.btn-light {
+    color: #8e26b8;
+    border-color: #8e26b8;
+    background-color: #ffffff;
+    color: #000000;
+}
+.btn-light:hover {
+    color: #ffffff;
+    border-color: #8e26b8;
+    background-color: #8e26b8;
+}
+.btn-link {
+    color: #8e26b8;
+    padding: 4px 0;
+}
+.btn-standart{
+    width: 263px;
+    height: 43px;
+    max-width: 100%;
 }
 .slider.slider-horizontal {
     width: 100%;
@@ -76,42 +185,6 @@ input[type=checkbox]:checked + label:after {
     background: #ffffff none;
     -webkit-box-shadow: 1px 1px 4px 1px rgba(0,0,0,.5);
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,.5);
-}
-.btn{
-    font-weight: 300;
-}
-.btn-primary{
-    background-color: #8e26b8;
-}
-.btn-dark{
-    background-color: #1f1f1f;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-.btn-dark:hover{
-    background-color: #ffffff;
-    border-color: #1f1f1f;
-    color: #1f1f1f;
-}
-.btn-light {
-    color: #8e26b8;
-    border-color: #8e26b8;
-    background-color: #ffffff;
-    color: #000000;
-}
-.btn-link {
-    color: #8e26b8;
-    padding: 4px 0;
-}
-.btn-light:hover {
-    color: #ffffff;
-    border-color: #8e26b8;
-    background-color: #8e26b8;
-}
-.btn-standart{
-    width: 263px;
-    height: 43px;
-    max-width: 100%;
 }
 .gray_text{
     color: #8e8e8e;
