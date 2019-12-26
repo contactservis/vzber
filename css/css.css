@@ -868,6 +868,9 @@ div.button_os .bt_sr_active #romb {
 footer .grey_bg{
     background: #f2f2f2;
 }
+footer .grey_bg2{
+    background: #f6f7f9;
+}
 
 footer .tel_box{
     padding-top: 32px;
@@ -887,8 +890,8 @@ footer .tel_box h4 {
 }
 
 footer .bottom_footer{
-    padding-bottom: 145px;
-    padding-top: 45px;
+    padding-bottom: 30px;
+    padding-top: 33px;
 }
 
 footer .bottom_footer img{
@@ -919,9 +922,13 @@ footer .box_footer_podpiska h4 {
 }
 
 .vz_button {
-    padding: 6px 33px 4px 33px;
-    color: #fff;
-    background: #8e26b8; 
+    padding: 8px 36px;
+    background: transparent;
+    border-color: #8e26b8;
+}
+.vz_button:hover {
+    background-color: #8e26b8;
+    color: #ffffff;
 }
 
 @media (min-width: 1200px) {

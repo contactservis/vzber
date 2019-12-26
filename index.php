@@ -313,16 +313,23 @@ if(!isset($_COOKIE['tryUser'])) {
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row bottom_footer">
-                    <div class="col-xl-7">
-                                <img src="img/logo_hd.png" alt="">
-                    </div>
-                    <div class="col-xl-5 box_footer_podpiska">
-                        <h3>Подписка на новости</h3>
-                        <h4>Будьте в курсе всех событий</h4>
-                        <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="E-mail">
-                        <button type="" class="vz_button btn float-right">Подписаться</button>
+            <div class="grey_bg2">
+                <div class="container">
+                    <div class="row bottom_footer justify-content-between">
+                        <div class="col-md-5 col-lg-4 col-xl-3 text-center">
+                            <img src="img/logo_hd.png" alt="">
+                        </div>
+                        <div class="col-md-6 col-lg-5 col-xl-4 mt-5 mt-md-0 box_footer_podpiska">
+                            <p>Будьте в курсе всех событий</p>
+                            <input type="text" name=""  class="form-control vz_input grey_bg2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="E-mail">
+                            <button type="submit" class="btn vz_button">Подписаться</button>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <p class="text-center gray_text">
+                                © 2019 АО «НФК-Сбережения», ООО «НФК - ФинТех»<br>
+                                Электронная почта: <a href="mailto:info@zberopolis.ru">info@zberopolis.ru</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
