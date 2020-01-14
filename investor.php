@@ -194,7 +194,7 @@ if(!isset($_COOKIE['tryUser'])) {
             </div>
             <div class="row">
                 <div class="col-xl-12 col-sm-12">
-                    <div class="rounded button_os"><span class="bt_sr_active"><span id="romb"></span>Инвестор</span><span><span id="romb"></span>Эмитент</span></div>
+                    <div class="rounded button_os"><span class="bt_sr_active">Инвестор</span><span>Эмитент</span></div>
                 </div>
             </div>
             <div class="row">

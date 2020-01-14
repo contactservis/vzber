@@ -1,56 +1,54 @@
 body{
     font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
     font-family: Roboto, serif;
 }
-h1{
-    font-size: 28px;
-}
-h2{
-    font-size: 36px;
-}
-h3{
-    font-size: 24px;
-    font-weight: 300;
+b, strong {
+    font-weight: bold;
 }
 .w-261{
     width: 261px;
     max-width: 100%;
 }
-.tl-h1{
+h2, .h2{
     font-weight: 300;
     font-size: 36px;
     line-height: 34px;
     text-transform: uppercase;
 }
-.tl-h2{
+h3, .h3{
     font-weight: 300;
     font-size: 24px;
     line-height: 34px;
+    text-transform: uppercase;
 }
-.tl-h3{
+h4, .h4{
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
 }
-.tl-h4{
+h5, .h5{
     font-weight: 300;
     font-size: 14px;
     line-height: 26px;
 }
-.tb-h2{
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 34px;
+.ul-zber{
+    list-style: none;
+    padding-left: 25px;
 }
-.tb-h3{
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 26px;
+.ul-zber li{
+    position: relative;
 }
-.tb-h4{
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 26px;
+.ul-zber li::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #8E26B8;
+    border-radius: 6px;
+    top: 7px;
+    left: -25px;
 }
 ::-webkit-input-placeholder {color:#9d9d9d;}
 ::-moz-placeholder          {color:#9d9d9d;}/* Firefox 19+ */
@@ -142,7 +140,6 @@ input[type=checkbox]:checked + label:after {
     color: #1f1f1f;
 }
 .btn-light {
-    color: #8e26b8;
     border-color: #8e26b8;
     background-color: #ffffff;
     color: #000000;
@@ -624,16 +621,8 @@ input[type=checkbox]:checked + label:after {
 }
 
 /* --- Zaemshik --- */
-h2.head_block {
-    margin: 35px 0 11px 0 !important;
-    font-size: 2.3rem;
-    font-weight: 400;
-    text-transform: uppercase;
-}
+
 /*общее*/
-#romb {
-    display: none;
-}
 
 /* логотип верхнее меню*/
 .tel_container .row {
@@ -705,11 +694,14 @@ div.pic_box {
 }
 
 /*блок о особенностях */
+.button_os_container{
+    overflow: hidden;
+    padding: 15px;
+}
 div.button_os {
-    height: 61px;    
     display: inline-block;
-    margin: 62px 0 -6px 0;
-
+    margin-top: 114px;
+    transition: transform 0.4s ease;
 }
 div.button_os .bt_sr_active {
     background: #8e26b8;
@@ -718,13 +710,21 @@ div.button_os .bt_sr_active {
     border: solid 1px #8e26b8;
 }
 div.button_os span{
-    padding: 11px 35px 12px 35px;
+    padding: 16px 41px 16px 40px;
     display: inline-block;
     font-size: 1.5rem;
     cursor: pointer;
-    border: solid 1px #dddddd;
+    border: solid 1px #d6d6d6;
+    white-space: nowrap;
 }
-div.button_os .bt_sr_active #romb {
+div.button_os span:first-child{
+    border-radius: 6px 0 0 6px;
+}
+div.button_os span:last-child{
+    border-radius: 0 6px 6px 0;
+}
+div.button_os .bt_sr_active::after {
+    content: "";
     width: 30px;
     height: 30px;
     background: #8e26b8;
@@ -738,31 +738,13 @@ div.button_os .bt_sr_active #romb {
     display: block;
     border: solid 1px #8e26b8;
 }
-/*блок главной преимущества*/
-.blok_pre img{
-    display: block;
-    margin: auto auto 20px;
-}
-
-.blok_pre .pre_text {
-    margin-top: 28px;
-}
-
-.blok_pre h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-/*о сервисе*/
-.blok_pre img.slayd{
-    margin-top: 10px;
-}
 
 /*Список проектов*/
 .main_list_proekt .card{
     transition: transform .2s ease;
     margin: 9px 5px 3px;
+    min-height: 500px;
+    position: relative;
 }
 
 .main_list_proekt .card:hover {    
@@ -772,47 +754,37 @@ div.button_os .bt_sr_active #romb {
     transform: translateY(-3px);
 
 }
-
-.main_list_proekt h5.card-title{
-    text-transform: uppercase;
-    min-height: 73px;
-    font-weight: normal; 
+.main_list_proekt .card-body .group-info{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 75px;
 }
-.main_list_proekt .card span {
-    float: left;
-    font-size: 0.8rem;
+.main_list_proekt .card-body div{
+    padding-right: 10px;
 }
-.main_list_proekt .card span p {
-    font-size: 1rem;
+.main_list_proekt .card-body div:last-child{
+    padding-left: 10px;
+    padding-right: 0;
+    border-left: 1px solid #d6d6d6;
 }
-
-.main_list_proekt .card span img{
-    margin-top: 5px;
+.main_list_proekt .card-body .group-btn{
+    display: flex;
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 20px;
 }
-
-.main_list_proekt .card .card-body a{
-    display: inline-block;
-    background: #8e26b8;
-    color: #fff;
-    width: 10rem;
-    margin-left: 1rem;
-    margin-top: 1.2rem;
-}
-
 /*Схема работы*/
-.shema_rabotu .box_investr h2 {
-    font-size: 2.3rem;
-    font-weight: 400;
-    text-transform: uppercase;
+.shema_rabotu{
+    margin-top: 85px;
+    margin-bottom: 100px;
 }
-.shema_rabotu .box_investr h3 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 16px;
-    margin-bottom: 19px;
+.scheme-slider-item{
+    justify-content: center;
+    align-items: center;
+    min-height: 430px;
 }
-
 /*Регистраци*/
 
 .box_reg_input input {
@@ -827,12 +799,12 @@ div.button_os .bt_sr_active #romb {
 
 .list_faq {
     margin-top: 32px;
-    padding: 0 3.3rem;
     margin-bottom: 82px;
 }
 
 .list_faq .box_help {
-    margin-bottom: 18px;
+    max-width: 746px;
+    margin: 0 auto 18px;
 }
 .list_faq .box_help .box_head_title {
     width: 90%;
@@ -840,8 +812,9 @@ div.button_os .bt_sr_active #romb {
 }
 .list_faq .card-header {
     background: #fff;
-    font-size: 1.5rem;
+    text-transform: uppercase;
     font-weight: 300;
+    border-radius: 6px;
 }
 
 .list_faq .icon_pl {
@@ -930,7 +903,51 @@ footer .box_footer_podpiska h4 {
     background-color: #8e26b8;
     color: #ffffff;
 }
-
+@media screen and (max-width: 543px){
+    .container-slider {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main_list_proekt .card{
+        width: 300px;
+        margin: 5px 0 5px 15px;
+        min-height: 420px;
+    }
+}
+@media screen and (max-width: 767px){
+    body{
+        font-size: 13px;
+        line-height: 130%;
+    }
+    h2, .h2{
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: none;
+    }
+    h3, .h3{
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: none;
+    }
+    h4, .h4{
+        font-size: 13px;
+        line-height: 26px;
+    }
+    h5, .h5{
+        font-size: 12px;
+        line-height: 26px;
+    }
+    ul li {
+        margin-top: 12px;
+    }
+    ul li::before {
+        top: 2px;
+    }
+    div.button_os span{
+        padding: 16px 20px 16px 20px;
+        font-size: 1rem;
+    }
+}
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;

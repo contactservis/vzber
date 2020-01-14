@@ -9,7 +9,7 @@ $(document).ready(function(){
         $(text_box).animate({
             display:'block',
             height: "toggle"
-        }, 600 , function(){
+        }, 300 , function(){
         
         });
         if ($(text_box).hasClass('hide')){
@@ -26,17 +26,34 @@ $(document).ready(function(){
 
     });
 
-    // кнопка 
+    // кнопка
+    let button_os = $('.button_os');
+    $.each(button_os, function (i, item) {
+        let span = item.getElementsByTagName('*');
+        let width = span.length*3;
+        $.each(span, function (ic, itemc) {
+            width += itemc.clientWidth;
+        });
+        item.style.minWidth = width + 'px';
+    })
     $('.button_os span').on('click', function(){
-        var span_parent  = $(this).parent('.button_os');
-        var all_span_box = $(span_parent).find("span")
-        
-        if ($(this).hasClass('bt_sr_active')){
-            $(all_span_box).addClass('bt_sr_active');
-            $(this).removeClass('bt_sr_active');
-        }else {
-            $(all_span_box).removeClass('bt_sr_active');
-            $(this).addClass('bt_sr_active');
+        let span_parent  = $(this).parent('.button_os');
+        let all_span_box = $(span_parent).find("span");
+        if(window.innerWidth<span_parent[0].clientWidth){
+            if($(this).is(':first-child')){
+                span_parent.css("transform", "translate(0px)");
+            }else if($(this).is(':last-child')){
+                span_parent.css("transform", "translate("+(window.innerWidth-span_parent[0].clientWidth-45)+"px)");
+            }else{
+                span_parent.css("transform", "translate("+(-1)*($(this)[0].clientWidth/2+$(this)[0].offsetLeft-window.innerWidth/2+15)+"px)");
+            }
         }
+        let name = $(this)[0].attributes['data-name'].nodeValue;
+        let numSlide = $(this)[0].attributes['data-pointer'].nodeValue;
+        $('div[data-sliderName="'+name+'"]:visible').fadeOut(200, function () {
+            $('div[data-sliderName="'+name+'"][data-slide="'+numSlide+'"]').fadeIn(200);
+        });
+        $(all_span_box).removeClass('bt_sr_active');
+        $(this).addClass('bt_sr_active');
     });
 });
