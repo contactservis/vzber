@@ -191,6 +191,14 @@ input[type=checkbox]:checked + label:after {
     padding-bottom:56.25%;
     height:0;
 }
+.preim_img{
+    position: relative;
+    width: 100%;
+}
+.preim-block img{
+    margin: auto auto 20px;
+    width: 76px !important;
+}
 .video-frame iframe{
     position:absolute;
     top:0;
@@ -912,6 +920,13 @@ footer .box_footer_podpiska h4 {
         width: 300px;
         margin: 5px 0 5px 15px;
         min-height: 420px;
+    }
+    .preim-block{
+        width: 350px;
+    }
+    .preim_block__item{
+        width: 90%;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 767px){

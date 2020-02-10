@@ -84,34 +84,64 @@ if(!isset($_COOKIE['tryUser'])) {
                 </div>
             </div>
         </div>        
-        <div class="container mt-4 pt-2">
-            <div class="row">
+        <div class="container mt-5 pt-2">
+            <div class="row owl-carousel preim-slider owl-theme-zber">
                 <?php 
                 $arr_preim = array(
                     array(
-                        'img'   => 'img/inv_ico_pre.png',
-                        'title' => 'Инвестором может стать каждый',
-                        'text'  => 'Минимальная сумма инвестирования 10 000 руб.'
+                        'img'   => 'img/icons8_natural_user_interface_2_100px 1.png',
+                        'title' => 'Простота',
+                        'text'  => 'Вам достаточно сделать 3 шага для того, чтобы стать инвестором, и 4 шага – чтобы стать эмитентом.'
                     ),
                     array(
-                        'img'   => 'img/fin_ico_pre.png',
-                        'title' => 'Быстрое финансирование без залога',
-                        'text'  => 'Сроки привличения средств от 1 месяца.'
+                        'img'   => 'img/icons8_collaboration_100px 1.png',
+                        'title' => 'Интерактивность',
+                        'text'  => 'На платформе реализована дистанционная модель обслуживания, в которой и инвесторы, и эмитенты могут пройти весь перечень процедур удаленно.'
                     ),
                     array(
-                        'img'   => 'img/ob_ico_pre.png',
-                        'title' => 'Широкий выбор объектов инвестирования',
-                        'text'  => 'От предприятий малого и среднего бизнеса до государственных облигаций'
+                        'img'   => 'img/icons8_clock_100px 1.png',
+                        'title' => 'Скорость',
+                        'text'  => 'Возможность инвестировать появляется уже на следующий день после регистрации. Запуск инвестиционных проектов осуществляется в течение 3-х дней.'
+                    ),
+                    array(
+                        'img'   => 'img/icons8_e-commerce_100px 1.png',
+                        'title' => 'Широкий выбор',
+                        'text'  => 'Доступны объекты инвестирования от предприятий малого и среднего бизнеса до государственных облигаций.'
+                    ),
+                    array(
+                        'img'   => 'img/icons8_helping_hand_100px 1.png',
+                        'title' => 'Выгодные условия',
+                        'text'  => 'Финансирование без залога и поручительств с индивидуальным графиком платежей.'
+                    ),
+                    array(
+                        'img'   => 'img/icons8_combo_chart_100px 1.png',
+                        'title' => 'Уникальная экономическая модель',
+                        'text'  => 'Инвестиционная платформа реализована на базе профессионального участника рынка ценных бумаг – брокера, без банковского посредничества.'
+                    ),
+                    array(
+                        'img'   => 'img/icons8_bill_100px 1.png',
+                        'title' => 'Оптимизация налогов',
+                        'text'  => 'Наличие единого налогового агента решает многие проблемы, в том числе позволяет уменьшить налоговую базу на размер убытков от отдельных инвестиций.'
+                    ),
+                    array(
+                        'img'   => 'img/icons8_business_100px 1.png',
+                        'title' => 'Встроенная диверсификация',
+                        'text'  => 'Ограничение на инвестирование в ценные бумаги одного эмитента в пределах 20% от стоимости портфеля позволяет сбалансировать портфель и уменьшить риски.'
+                    ),
+                    array(
+                        'img'   => 'img/icons8_cash_in_hand_100px 1.png',
+                        'title' => 'Доступность',
+                        'text'  => 'Для начала инвестирования достаточно 5000 рублей. Привлечь финансирование могут даже представители микробизнеса.'
                     )
                 );
                 foreach ($arr_preim as $item_p)  {
                 ?>
-                <div class="col-md-4">
-                    <div class="row mt-3">
-                        <div class="col-3 col-md-12 text-center">
-                            <img class="mw-100" src="<?=$item_p['img']?>">
+                <div class="preim-block">
+                    <div class="preim_block__item">
+                        <div class="preim_img text-center">
+                            <img src="<?=$item_p['img']?>">
                         </div>
-                        <div class="col-9 col-md-12 mt-0 mt-md-4">
+                        <div class="preim_block__desc">
                             <h3><?=$item_p['title']?></h3>
                             <p><?=$item_p['text']?></p>
                         </div>
@@ -379,6 +409,33 @@ if(!isset($_COOKIE['tryUser'])) {
                             items: 1,
                             stagePadding: 5,
                             margin: 15
+                        },
+                        768: {
+                            items: 2,
+                            stagePadding: 5,
+                            margin: 15,
+                        },
+                        992: {
+                            stagePadding: 0,
+                            margin: 15,
+                            items: 3
+                        }
+                    }
+                });
+                $('.preim-slider').owlCarousel({
+                    loop:false,
+                    nav:false,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            stagePadding: 5,
+                            margin: 0,
+                            autoWidth: true
+                        },
+                        544: {
+                            items: 1,
+                            stagePadding: 5,
+                            margin: 20
                         },
                         768: {
                             items: 2,
