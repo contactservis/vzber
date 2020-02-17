@@ -49,13 +49,13 @@ if(!isset($_COOKIE['tryUser'])) {
                 <div class="col-md-4 text-center text-md-left align-self-center">
                     <span class="top-banner-name">Личный счет</span>
                 </div>
-                <div class="col-md-4 text-center text-md-right">
+                <div class="col-md-5 text-center text-md-right">
                     <span class="gray_text d-block">Прогнозируемая сумма поступлений по %</span>
-                    <span class="top-banner-price">136 814,<span>00</span></span>
+                    <span class="top-banner-price">136 814,<span>00</span> Р</span>
                 </div>
-                <div class="col-md-4 text-center text-md-right">
+                <div class="col-md-3 text-center text-md-right">
                     <span class="gray_text d-block">Сумма остатка счета</span>
-                    <span class="top-banner-price">360 814,<span>00</span></span>
+                    <span class="top-banner-price">360 814,<span>00</span> Р</span>
                     <div class="top-banner-button"><button class="btn btn-dark">Вывести средства</button></div>
                 </div>
             </div>
@@ -64,8 +64,8 @@ if(!isset($_COOKIE['tryUser'])) {
     <!--Содержание-->
     <div class="lichny-schet">
         <div class="container">
-            <h1>Эмитент</h1>
-            <div class="row">
+            <h3 class="font-weight-bold">Эмитент</h3>
+            <div class="row mt-5">
                 <div class="col-md-8">
                     <div class="lichny-schet-emitent">
                         <div class="row">
@@ -74,8 +74,8 @@ if(!isset($_COOKIE['tryUser'])) {
                                     <img src="img/example-building.jpg" alt="" class="lichny-schet-img">
                                     <h3>Название</h3>
                                     <span class="d-block">Новый сервис электронных платежей PayPey</span>
-                                    <button class="btn btn-light">Профиль</button>
-                                    <button class="btn btn-light">Написать сообщение</button>
+                                    <button class="btn btn-light mt-3">Профиль</button>
+                                    <button class="btn btn-light mt-3">Написать сообщение</button>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3">
@@ -101,7 +101,7 @@ if(!isset($_COOKIE['tryUser'])) {
                                 <div class="lichny-schet-sum-post">
                                     <span class="d-block">Прогнозная сумма поступлений:</span>
                                     <span class="d-block gray_text">23.11.2018</span>
-                                    <span class="d-block lichny-schet-sum-post-price">13 450,<span>00</span> P</span>
+                                    <span class="d-block lichny-schet-sum-post-price lichny-schet-purpur">13 450,<span>00</span> P</span>
                                     <div class="progress lichny-schet-progress-ostatok">
                                         <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
@@ -151,7 +151,7 @@ if(!isset($_COOKIE['tryUser'])) {
                                 <div class="lichny-schet-sum-post">
                                     <span class="d-block">Прогнозная сумма поступлений:</span>
                                     <span class="d-block gray_text">23.11.2018</span>
-                                    <span class="d-block lichny-schet-sum-post-price">13 450,<span>00</span> P</span>
+                                    <span class="d-block lichny-schet-sum-post-price lichny-schet-purpur">13 450,<span>00</span> P</span>
                                     <div class="progress lichny-schet-progress-ostatok">
                                         <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
@@ -201,7 +201,7 @@ if(!isset($_COOKIE['tryUser'])) {
                                 <div class="lichny-schet-sum-post">
                                     <span class="d-block">Прогнозная сумма поступлений:</span>
                                     <span class="d-block gray_text">23.11.2018</span>
-                                    <span class="d-block lichny-schet-sum-post-price">13 450,<span>00</span> P</span>
+                                    <span class="d-block lichny-schet-sum-post-price lichny-schet-purpur">13 450,<span>00</span> P</span>
                                     <div class="progress lichny-schet-progress-ostatok">
                                         <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>

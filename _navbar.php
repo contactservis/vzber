@@ -35,7 +35,7 @@
 $menu = ["ОБЪЕКТЫ Инвестирования"=>"/obekty-zajma.php",
         "ПРИОБРЕТЕННЫЕ ОБЬЕКТЫ Инвестирования"=>"/priobretenniye-obekty-investirovaniya.php",
         "Эмитент"=>"/zaemshik.php",
-        "ЛИЧНЫЙ СЧЕТ"=>"/lichny-schet.php",
+        "ЛИЧНЫЙ СЧЕТ"=>"/lk_investora_lichny-schet.php",
         "ПОКАЗАТЕЛЬ ИНВЕСТОРА"=>"#",
         "СООБЩЕНИЯ"=>"#",
         "СДЕЛКИ"=>"#"];

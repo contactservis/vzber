@@ -4,7 +4,7 @@ body{
     line-height: 26px;
     font-family: Roboto, serif;
 }
-b, strong {
+b, strong{
     font-weight: bold;
 }
 .w-261{
@@ -21,7 +21,6 @@ h3, .h3{
     font-weight: 300;
     font-size: 24px;
     line-height: 34px;
-    text-transform: uppercase;
 }
 h4, .h4{
     font-weight: 300;
@@ -270,7 +269,8 @@ input[type=checkbox]:checked + label:after {
     min-height: 148px;
 }
 .top-banner .top-banner-name{
-    font-size: 36px;
+    font-size: 24px;
+    font-weight: bold;
     display: block;
 }
 .top-banner .top-banner-rate, .top-banner .top-banner-date{
@@ -295,9 +295,9 @@ input[type=checkbox]:checked + label:after {
     font-weight: normal;
 }
 .top-banner .top-banner-price{
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 2;
 }
 .top-banner .top-banner-price span{
     font-size: 24px;
@@ -338,8 +338,8 @@ input[type=checkbox]:checked + label:after {
     border-bottom: 1px solid #dddddd;
 }
 .lichny-schet-emitent .lichny-schet-img{
-    width: 105px;
-    height: 105px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
     float: left;
@@ -361,42 +361,75 @@ input[type=checkbox]:checked + label:after {
 }
 .lichny-schet .lichny-schet-stavka{
     position: relative;
-    margin-left: 45px;
+    margin-left: 70px;
     display: block;
 }
 .lichny-schet .lichny-schet-stavka::before{
     content: "";
-    background-image: url("img/percent-circle-outline-blue.png");
-    width: 36px;
-    height: 35px;
+    background-image: url(img/percent-circle-outline-blue.png);
+    width: 43px;
+    height: 43px;
     position: absolute;
-    left: -45px;
+    left: -65px;
     top: 6px;
 }
 .lichny-schet .lichny-schet-stavka span, .lichny-schet .lichny-schet-sum-invest span, .lichny-schet .lichny-schet-srok span{
     font-size: 24px;
     color: #000000;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.3;
 }
 .lichny-schet .lichny-schet-vyplata{
     font-size: 24px;
     margin-top: 17px;
 }
+.lichny-schet .lichny-schet-vyplata-small{
+    font-size: 16px;
+}
+.lichny-schet .lichny-schet-purpur{
+    color: #8E26B8;
+}
+.lichny-schet .lichny-schet-bg-purpur{
+    background-color: #8E26B8;
+}
+.lichny-schet .lichny-schet-orange{
+    color: #FF9314;
+}
+.lichny-schet .lichny-schet-bg-orange{
+    background-color: #FF9314;
+}
 .lichny-schet .lichny-schet-vyplata > .float-left{
     color: #8c32bc;
     font-weight: 500;
 }
+.lichny-schet .lichny-schet-red{
+    color: #F01B1B;
+}
 .lichny-schet .progress{
     width: 100%;
 }
+.lichny-schet-progress-half{
+    width: 50%;
+    display: flex;
+}
+.lichny-schet-progress-half:first-child{
+    justify-content: flex-end;
+}
+.lichny-schet-progress-half:first-child div{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.lichny-schet-progress-half:last-child{
+    justify-content: flex-start;
+}
+.lichny-schet-progress-half:last-child div{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
 .lichny-schet  .lichny-schet-sum-post-price, .lichny-schet .lichny-schet-sum-zadol-price{
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 1.8;
-}
-.lichny-schet  .lichny-schet-sum-post-price{
-    color: #8c32bc;
 }
 .lichny-schet .lichny-schet-sum-zadol-price{
     color: #fe9300;
@@ -406,7 +439,7 @@ input[type=checkbox]:checked + label:after {
 }
 .lichny-schet .lichny-schet-progress-viplacheno{
     height: 11px;
-    margin-top: 44px;
+    margin-top: 15px;
     margin-bottom: 35px;
 }
 .lichny-schet .lichny-schet-progress-viplacheno .progress-bar{
@@ -426,6 +459,12 @@ input[type=checkbox]:checked + label:after {
     background-image: url("img/progress-bar-oval-sprite.png");
     background-position: 0 0;
     background-repeat: repeat-x;
+}
+.lichny-schet .lichny-schet-progress-ostatok .progress-bar-red{
+    background-position: 0 -64px;
+}
+.lichny-schet .lichny-schet-progress-ostatok .progress-bar-orange{
+    background-position: 0 -96px;
 }
 .lichny-schet-operation{
     padding-bottom: 21px;
