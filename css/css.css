@@ -7,6 +7,10 @@ body{
 b, strong{
     font-weight: bold;
 }
+.w-164{
+    width: 164px;
+    max-width: 100%;
+}
 .w-261{
     width: 261px;
     max-width: 100%;
@@ -63,6 +67,7 @@ input[type="text"], input[type="password"], textarea, input[type="date"], input[
     box-sizing: border-box;
     border-radius: 6px;
     padding: 17px;
+    resize: none;
 }
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus, input[type="date"]:focus, input[type="email"]:focus{
     border: 1px solid #8e26b8;
@@ -309,7 +314,14 @@ input[type=checkbox]:checked + label:after {
     width: 263px;
     height: 43px;
 }
-
+.top-banner2{
+    height: 392px;
+    background-color: #2F2F2F;
+    color: #ffffff;
+}
+.top-banner2 .top-banner2-header{
+    font-size: 60px;
+}
 /* --- Top banner --- */
 
 /* --- Foter --- */
@@ -854,34 +866,49 @@ div.button_os .bt_sr_active::after {
     margin: 0 auto 18px;
 }
 .list_faq .box_help .box_head_title {
-    width: 90%;
-    cursor: pointer;
+    font-size: 18px;
 }
 .list_faq .card-header {
     background: #fff;
     text-transform: uppercase;
     font-weight: 300;
     border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
-.list_faq .icon_pl {
-    cursor: pointer;
-    width: 26px;
-    height: 26px;
-    background: url(img/plus.png) center;
-    margin-top: 4px;
+.list_faq .icon_pl, .list_faq .icon_min {
+    width: 19px;
+    min-width: 19px;
+    height: 19px;
+    position: relative;
 }
-
-.list_faq .icon_min {
-    cursor: pointer;
-    width: 26px;
-    height: 26px;
-    background: url(img/minus.png) center;
-    margin-top: 4px;
+.list_faq .icon_pl::before, .list_faq .icon_min::before {
+    content: "";
+    height: 1px;
+    width: 19px;
+    background-color: #D6D6D6;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+.list_faq .icon_pl::after {
+    content: "";
+    height: 19px;
+    width: 1px;
+    background-color: #D6D6D6;
+    position: absolute;
+    left: 9px;
+    top: 0;
 }
 
 .list_faq .card-body{
     padding: 0 1.25rem;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9d9d9d;
 }
 
 /*Подвал*/

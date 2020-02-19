@@ -322,7 +322,7 @@ if(!isset($_COOKIE['tryUser'])) {
                     <button type="" class="vz_button btn">Войти</button>
                 </div>
             </div>
-        </div>
+        </div><!--Блок регистрация/авторизация-->
         <!--Блок вопросы-->
         <div class="container questions">
                 <div class="row">
@@ -343,7 +343,7 @@ if(!isset($_COOKIE['tryUser'])) {
                         foreach($ar_help_quests as $key => $item_help){
                             ?>
                             <div class="box_help card" id="helpbox<?=$key?>">
-                                <div class="card-header border-bottom-0"><span class="float-left box_head_title"><?=$item_help['title']?></span><span class="float-right icon_pl"></span></div>                                
+                                <div class="card-header border-bottom-0"><span class="box_head_title"><?=$item_help['title']?></span><span class="icon_pl"></span></div>
                                 <div class="card-body hide border-top" style="display:none;">                                    
                                     <p style="margin-top: 1.2rem;"><?=$item_help['text']?></p>
                                 </div>
