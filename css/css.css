@@ -15,6 +15,9 @@ b, strong{
     width: 261px;
     max-width: 100%;
 }
+.mt-2-5{
+    margin-top: 2.5rem;
+}
 h2, .h2{
     font-weight: 300;
     font-size: 36px;
@@ -976,6 +979,48 @@ footer .box_footer_podpiska h4 {
 .vz_button:hover {
     background-color: #8e26b8;
     color: #ffffff;
+}
+.add-plus-round{
+    width: 95px;
+    height: 95px;
+    border: 1px solid #D6D6D6;
+    border-radius: 50%;
+    position: relative;
+}
+.add-plus-round::before, .add-plus-round::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #c4c4c4;
+    width: 2px;
+    height: 36px;
+    left: 46px;
+    top: 28px;
+
+}
+.add-plus-round::after{
+    transform: rotate(90deg);
+}
+.add-image-btn, .add-video-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: box-shadow .2s ease;
+}
+.add-image-btn:hover, .add-video-btn:hover{
+    box-shadow: 0 0 9px #d6d6d6;
+}
+.add-image-btn{
+    height: 358px;
+}
+.add-video-btn{
+    height: 220px;
 }
 @media screen and (max-width: 543px){
     .container-slider {
