@@ -67,12 +67,18 @@ if(!isset($_COOKIE['tryUser'])) {
         </div>
         <!--Большой рекламный слайдер-->
         <div class="main_slayder">
-            <div style="overflow: hidden; width: 100%; text-align: center; position: relative;">
-                <img src="img/big_baner3.jpg" alt="инвестиционный сервис Зберополис"/>
-                <div class="slayder_text">
-                    <h1 style="font-size: 3rem;">Инвестируйте</h1>
-                    <h3 style="font-size: 2.5rem;font-weight: 100;margin-top: 0px;">с доходностью свыше</h3>
-                    <span style="font-size: 9rem;margin-top: 43px;display: inline-block;">30%</span><span style="font-size: 2.5rem;font-weight: 100;margin-top: 40px;display: block;float: right;margin-right: 66px;">годовых</span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex align-items-center my-5 order-3 order-md-1">
+                        <div class="slayder_text">
+                            <div class="slayder_text_top">Инвестируйте</div>
+                            <div class="slayder_text_mid">с доходностью свыше</div>
+                            <div class="slayder_text_bot">30% годовых</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center my-5 order-2">
+                        <img src="img/main_banner_new.png" class="mw-100" alt="инвестиционный сервис Зберополис"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -283,48 +289,94 @@ if(!isset($_COOKIE['tryUser'])) {
                         <span class="bt_sr_active" data-pointer="1" data-name="type">Инвестор</span><span data-pointer="2" data-name="type">Эмитент</span>
                     </div>
             </div>
-            <div class="row">
-                <div class="col-xl-6" data-slide="1" data-sliderName="type">
+            <div class="row box_reg_input" data-slide="1" data-sliderName="type">
+                <div class="col-md-6">
                     <h2 class="text-left head_block">Регистрация Инвестора</h2>
-                    <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                    <p>Инвестировать может любая коммерческая организация, индивидуальный предприниматель или частное лицо.</p>
+                        <form action="">
+                        <div class="row">
+                            <div class="col-12 reg_usertype">
+                                <label>
+                                    <input type="radio" name="usertype">
+                                    <div>Физическое лицо</div>
+                                </label>
+                                <label>
+                                    <input type="radio" name="usertype">
+                                    <div>Юридическое Лицо</div>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Фамилия" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Имя" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Отчество" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Телефон" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <button type="submit" class="vz_button btn">Регистрация</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-xl-6" data-slide="2" data-sliderName="type" style="display: none">
-                    <h2 class="text-left head_block">Регистрация Инвестора</h2>
-                    <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                <div class="col-md-1">
+                    <div class="registration_dec_line">
+                        <span class="bg-white gray_text p-3">Или</span>
+                    </div>
                 </div>
-                <div class="col-xl-1">
-                    <div class="registration_dec_line border-right" style="height: 7rem; margin-top: 39px;"></div>
-                </div>
-                <div class="col-xl-5">
+                <div class="col-md-5">
                     <h2 class="text-left head_block">Вход</h2>
                     <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                    <form action="">
+                        <input type="text" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Логин" value="">
+                        <input type="password" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Пароль" value="">
+                        <button type="submit" class="vz_button btn">Войти</button>
+                    </form>
                 </div>
             </div>
-            <div class="row box_reg_input">
-                <div class="col-xl-3">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Физическое лицо">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Фамилия">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Отчество">
-                    <button type="" class="vz_button btn">Регистрация</button>
+            <div class="row box_reg_input" data-slide="2" data-sliderName="type" style="display: none">
+                <div class="col-md-6">
+                    <h2 class="text-left head_block">Регистрация Эмитента</h2>
+                    <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                    <form action="">
+                        <div class="row">
+                             <div class="col-md-6">
+                                <input type="text" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Логин" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Пароль" value="">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="" id="" class="form-control vz_input mb-3" rows="4" placeholder="Обоснование регистрации"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="submit" class="vz_button btn">Регистрация</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-xl-3">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Юридическое лицо">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Имя">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Телефон">
+                <div class="col-md-1">
+                    <div class="registration_dec_line">
+                        <span class="bg-white gray_text p-3">Или</span>
+                    </div>
                 </div>
-                <div class="col-xl-1">                    
-                    <p class="text-center" style="color:#b5b5b5; margin-top: 10px;">Или</p>
-                    <div class="registration_dec_line border-right" style="height: 14rem;"></div>
-                </div>
-                <div class="col-xl-4">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Логин">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Пароль">
-                    <button type="" class="vz_button btn">Войти</button>
+                <div class="col-md-5">
+                    <h2 class="text-left head_block">Вход</h2>
+                    <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                    <form action="">
+                        <input type="text" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Логин" value="">
+                        <input type="password" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Пароль" value="">
+                        <button type="submit" class="vz_button btn">Войти</button>
+                    </form>
                 </div>
             </div>
         </div><!--Блок регистрация/авторизация-->
         <!--Блок вопросы-->
-        <div class="container questions">
+        <div class="container questions mt-4">
                 <div class="row">
                     <div class="col-xl-12">
                         <h2 class="text-center head_block">Вопросы и ответы</h2>
@@ -433,7 +485,7 @@ if(!isset($_COOKIE['tryUser'])) {
                             autoWidth: true
                         },
                         544: {
-                            items: 1,
+                            items: 2,
                             stagePadding: 5,
                             margin: 20
                         },
@@ -449,6 +501,7 @@ if(!isset($_COOKIE['tryUser'])) {
                         }
                     }
                 });
+                responsivRowOwl(".preim-slider", 1, 1, 1, 3);
                 $('.scheme-slider').owlCarousel({
                     loop:false,
                     margin:0,

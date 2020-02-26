@@ -743,18 +743,37 @@ div.pic_box {
 }
 /* Слайдер*/
 
-.main_slayder .slayder_text {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    color: #fff;
-    text-transform: uppercase;
-    width: 518px;
-    margin-left: -559px;
-    margin-top: 137px;
-    text-align: left;
+.main_slayder{
+    background-color: #2F2F2F;
 }
-
+.main_slayder .slayder_text {
+    color: #ffffff;
+}
+.main_slayder .slayder_text_top {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+.main_slayder .slayder_text_mid, .main_slayder .slayder_text_bot {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+}
+.main_slayder .slayder_text_mid {
+    text-transform: uppercase;
+}
+@media screen and (max-width: 991px){
+    .main_slayder .slayder_text_top {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .main_slayder .slayder_text_mid, .main_slayder .slayder_text_bot {
+        font-size: 24px;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+}
 /*блок о особенностях */
 .button_os_container{
     overflow: hidden;
@@ -854,9 +873,107 @@ div.button_os .bt_sr_active::after {
 }
 
 .registration_dec_line {
-    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-
+.registration_dec_line::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #D6D6D6;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+}
+.reg_usertype{
+    display: flex;
+    justify-content: space-between;
+}
+.reg_usertype label{
+    width: calc(50% - 15px);
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+.reg_usertype label div{
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 16px 30px 16px 22px;
+    position: relative;
+}
+.reg_usertype label div::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 100%;
+    border-left: 1px solid #D6D6D6;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.reg_usertype label div::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 100%;
+    border-left: 1px solid #D6D6D6;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.reg_usertype input{
+    display: none;
+}
+.reg_usertype input:checked + div::after{
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOCSURBVHgBvZZrSBRRFMfPvTu7pbWZZWFlL/KRRURBRlLkh15aBCVaXyIhIqIHtmlFQa0QlamrQVZSfjDyiz0wyXWtUCFQKEGCfOKLMKg00d1kddeZ05l9tZraurr+Gbhzzr13ftyZ8xgGM6i7ofo1Amd5wNh8LolnFDBD0oKW+y0M0RH4EJlLJYBgDjOkgIhtSQQ+6rQZ41UMZkC5q0qDh1RCNQCutjkQ6wXEaJ+fPCGhSGFWKe65wAADVlFKOt8aZ/Q5PPpzwB6OEG+3GNKVf7l9f61s+RSeGVm6EhEfAQNHYGONxWq67pz3KZyLyhQCr7BhASwgwt0r7Yn9PodnrTXEA4onXCCEnJrNxjfua3wS7U9CDAuM/qyKzrtBtulDdwxK4tZrrXHd7uum/eQIyEx+7KYTTBqCYenkaLBP4DkR+miK6CQ3V5GmfV/FWGsFmEbdWFIShMgf062fbCNKXyRpMIXJKTaGpvXkarXqHIVRJDjIwIX01LbDP8dbL8PZwzXli9ODitUwBWWHlsXQwzQuB+P5JkVf0UR7uC60NMGswA9C4Cy9LrJiPXih9IhiNSqocQHMtYPxu8jgtrYh0TLRPo6cX6AxnDG2HURruS7MsEuuxzAJKVGVQkG+026xYY6YnNq8t+N/+zj1tmIah+0mLqPIKIqqmxcPHkoXaqC3xc+6ud4u3fj7hSd7bUUmK6xM7rX3yZjj8FsoX7OMPXgnrTfOOC44pNoP/Y1yX45yuDq5YNmZ3HDwK3ggW7TPnbeokAEeo4c4C4GK0uNSQBC/ro3BcdMR5/SfpGGL7V6u3oAZnoJljSivGeFlWzhjhZSVYW7uakGSjlD/7XJfmx1p2EzJ9J6YgTY4wnNmNh7XdCWawUONyPPUlthPwMQDdPvRzR09zBUvc1dVBjsdeUtK/EGCGy4wQA8TIG0y4H/gsi427W8Z5EIc9eFXZFrtXowaUlkadWv1e2TLpFaeopMetM2QaLiqadxXD5PUmBXuatOuXybl7OP0UZ799eJ8SqcCCs5TFA+uYoIMqjullqfghSZsqdqYSiHgm/m0BCyN6kDg6HkKsm6FFXYkd8Q2gxeasJhUdRZI23rDalULl/cxBrthVCOiPn1L0xZbDF7K45+JrHDDRsK9ple+0gF+J/XDodQfewfAS03qTyZznX4Tt/IHtpalFM6kNOyugynoD4UXPl1BEc+YAAAAAElFTkSuQmCC') no-repeat center center;
+}
+@media screen and (max-width: 767px){
+    .registration_dec_line::before {
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 50%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .reg_usertype {
+        border-radius: 6px;
+    }
+    .reg_usertype label div {
+        border-radius: 0;
+    }
+    .reg_usertype label {
+        width: 50%;
+    }
+    .reg_usertype label div {
+        font-size: 16px;
+        border: none;
+    }
+    .reg_usertype label {
+        border: 1px solid #D6D6D6;;
+    }
+    .reg_usertype label:first-child {
+        border-right: none;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    .reg_usertype label:last-child {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    .reg_usertype label div::after {
+        content: none;
+    }
+    .reg_usertype input:checked + div{
+        background-color: #8e26b8;
+        color: #ffffff;
+    }
+}
 /*Вопросы*/
 
 .list_faq {
@@ -1033,7 +1150,7 @@ footer .box_footer_podpiska h4 {
         min-height: 420px;
     }
     .preim-block{
-        width: 350px;
+        max-width: 350px;
     }
     .preim_block__item{
         width: 90%;

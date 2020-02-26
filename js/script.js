@@ -1,3 +1,50 @@
+function rebuildSlider(className, row = 1) {
+    const carousele = $(className)
+    const columnClassName = carousele.find('.owl-item').first().children().first()[0].className;
+    //const itemClassName = $('.'+columnClassName).first().children().first()[0].className;
+    const objItem = $(className+' .'+columnClassName.replace(' ','.')).children();
+    let counter = 0;
+    let newSliderContent = '';
+    $.each(objItem, function (key, value){
+        if (counter === 0) {newSliderContent += '<div class="'+columnClassName+'">'};
+        newSliderContent += value['outerHTML'];
+        counter++;
+        if (counter === row) {newSliderContent += '</div>'; counter = 0;}
+    });
+    //console.log(newSliderContent.replace(/\s+/g,' '));
+    carousele.owlCarousel().trigger('replace.owl.carousel', [jQuery(newSliderContent.replace(/\s+/g,' '))]).trigger('refresh.owl.carousel');
+}
+function scanerForRebuildSlider(className, desktop = 1, notebook = 1, tablet = 1, mobile = 1) {
+    const widthScreen = window.innerWidth;
+    switch (true) {
+        case (widthScreen<=575): {
+            console.log("mobile");
+            rebuildSlider(className, mobile);
+            break;
+        }
+        case (widthScreen<=991): {
+            console.log("tablet");
+            rebuildSlider(className, tablet);
+            break;
+        }
+        case (widthScreen<=1199): {console.log("notebook");
+            rebuildSlider(className, notebook);
+            break;
+        }
+        default: {
+            console.log("desktop");
+            rebuildSlider(className, desktop);
+            break;
+        }
+    }
+}
+function responsivRowOwl(className, d=1, n=1, t=1, m=1) {
+    $(className).on('resized.owl.carousel', function() {
+        scanerForRebuildSlider(className, d, n, t, m);
+    });
+    scanerForRebuildSlider(className, d, n, t, m);
+}
+
 // главная страница
 $(document).ready(function(){
     //раскрывающиеся боксы вопросов помощи на главной странице
