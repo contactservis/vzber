@@ -377,8 +377,8 @@ input[type=checkbox]:checked + label:after {
     margin-bottom: 36px;
 }
 .lichny-schet-emitent{
-    padding-bottom: 65px;
-    margin-bottom: 75px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
     border-bottom: 1px solid #dddddd;
 }
 .lichny-schet-emitent .lichny-schet-img{
@@ -516,6 +516,34 @@ input[type=checkbox]:checked + label:after {
 .lichny-schet .lichny-schet-operation-price{
     color: #8c32bc;
     white-space: nowrap;
+}
+@media screen and (max-width: 575px){
+    .lichny-schet-emitent .lichny-schet-img{
+        width: 94px;
+        height: 94px;
+        margin-right: 28px;
+    }
+}
+@media screen and (max-width: 991px){
+    .lichny-schet .lichny-schet-stavka {
+        margin-left: 50px;
+    }
+    .lichny-schet .lichny-schet-stavka::before {
+        top: 0;
+        left: -50px;
+    }
+    .lichny-schet .lichny-schet-stavka span, .lichny-schet .lichny-schet-sum-invest span, .lichny-schet .lichny-schet-srok span {
+        font-size: 18px;
+    }
+    .lichny-schet .lichny-schet-vyplata {
+        font-size: 18px;
+    }
+    .lichny-schet .lichny-schet-sum-post-price, .lichny-schet .lichny-schet-sum-zadol-price {
+        font-size: 18px;
+    }
+    .lichny-schet .lichny-schet-sum-post-price span, .lichny-schet .lichny-schet-sum-zadol-price span {
+        font-size: 18px;
+    }
 }
 /* --- lichny-schet --- */
 
@@ -1186,6 +1214,12 @@ footer .box_footer_podpiska h4 {
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 575px){
+    .w-sm-100{
+        width: 100%!important;
+        max-width: 100%!important;
+    }
+}
 @media screen and (max-width: 767px){
     div.button_os span{
         padding: 16px 20px 16px 20px;
@@ -1194,8 +1228,11 @@ footer .box_footer_podpiska h4 {
 }
 @media screen and (max-width: 991px){
     body{
-        font-size: 13px;
-        line-height: 130%;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .btn{
+        font-size: 12px;
     }
     h2, .h2{
         font-size: 24px;
