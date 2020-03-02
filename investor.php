@@ -63,29 +63,35 @@ if(!isset($_COOKIE['tryUser'])) {
                     </div>                
             </div>
         </div>
-        <!--Большой рекламный слайдер-->
-        <div class="main_slayder">
-            <div style="overflow: hidden; width: 100%; text-align: center; position: relative;">
-                <img src="img/big_baner_inv.jpg" alt="инвестиционный сервис Зберополис"/> 
-                <!--<div class="slayder_text"> 
-                    <h1 style="font-size: 3rem;">Инвестируйте</h1>
-                    <h3 style="font-size: 2.5rem; font-weight: 100; margin-top: -13px;">с доходностью свыше</h3>
-                    <span style="font-size: 9rem; margin-top: -60px; display: inline-block;">30%</span><span style="font-size: 2.5rem; font-weight: 100; margin-top: -18px; display: block; float: right; margin-right: 66px;">годовых</span>
-                </div>-->
+        <!--Банеер-->
+        <div class="top-banner1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex align-items-center my-5 order-3 order-md-1">
+                        <div class="slayder_text">
+                            <div class="slayder_text_top">Инвестируйте</div>
+                            <div class="slayder_text_mid">С доходностью от</div>
+                            <div class="slayder_text_bot">15% годовых</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center my-5 order-2">
+                        <img src="img/main_banner_new.png" class="mw-100" alt="инвестиционный сервис Зберополис"/>
+                    </div>
+                </div>
             </div>
         </div>
         <!--Блок как стать инвестором-->
-        <div class="container kak_sat_investr">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <h2>Стать инвестором</h2>
-                    <h3>ZBEROPOLIS</h3>
-                    <p>это сервис, который дает частным инвесторам возможность вкладывать свои средства в различные направления: от предприятий малого и среднего бизнеса до государственных облигаций. Инвестором может стать любое физическое или юридическое лицо, зарегистрированное на территории Российской Федерации.</p>
-                    <p>Вы сами решаете, куда вложить деньги и на каких условиях. Брокер не несет ответственности за выбор финансовых инструментов, поэтому все возможные риски потери средств лежат на Инвесторе. Однако можно существенно уменьшить свои риски, если инвестировать в финансовые инструменты нескольких компаний. Целесообразно распределить Ваши средства хотя бы между 5-10 различными, не зависящими друг от друга компаниями. Также имеет смысл вложить часть средств в государственные облигации либо облигации крупнейших российских эмитентов.</p>
-                    <p>Мы предлагаем Вам инвестирование в финансовые инструменты с фиксированным доходом, которые четко позволяют определить срок и ставку ожидаемой доходности – это могут быть облигации, производные финансовые инструменты или структурные продукты (комбинации различных финансовых инструментов с четко определенной структурой будущих выплат).</p>
+        <div class="container kak_sat_investr mt-5 pb-md-5">
+            <h2>Стать инвестором</h2>
+            <h3>ZBEROPOLIS</h3>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p>Это сервис, который дает частным инвесторам возможность вкладывать свои средства в различные направления: от предприятий малого и среднего бизнеса до государственных облигаций. Инвестором может стать любое физическое или юридическое лицо, зарегистрированное на территории Российской Федерации.</p>
+                    <p>Вы сами решаете, куда вложить деньги и на каких условиях. Брокер не несет ответственности за выбор финансовых инструментов, поэтому все возможные риски потери средств лежат на Инвесторе. Однако можно существенно уменьшить свои риски, если инвестировать в финансовые инструменты нескольких компаний. </p>
                 </div>
-                <div class="col-xl-6 col-lg-6 text-center">
-                    <img src="img/zagl_inv.jpg" />
+                <div class="col-md-6">
+                    <p>Целесообразно распределить Ваши средства хотя бы между 5-10 различными, не зависящими друг от друга компаниями. Также имеет смысл вложить часть средств в государственные облигации либо облигации крупнейших российских эмитентов.</p>
+                    <p>Мы предлагаем Вам инвестирование в финансовые инструменты с фиксированным доходом, которые четко позволяют определить срок и ставку ожидаемой доходности – это могут быть облигации, производные финансовые инструменты или структурные продукты (комбинации различных финансовых инструментов с четко определенной структурой будущих выплат).</p>
                 </div>
             </div>
         </div>
@@ -97,63 +103,67 @@ if(!isset($_COOKIE['tryUser'])) {
                     </div>
                 </div>
         </div>
-        <div class="container mt-2">
-                <div class="main_list_proekt owl-carousel owl-theme-zber">
-                        <?php 
-                            $arr = array(
-                                array('КОФЕЙНЯ', 'img/proekt1.jpg'),
-                                array('Перерабатывающий комплекс', 'img/proekt2.jpg'),
-                                array('Добыча песка на речном карьере', 'img/proekt3.jpg'),
-                                array('Сервис электронных платежей', 'img/proekt4.jpg'),
-                                array('Добыча песка на речном карьере', 'img/proekt3.jpg'),
-                                array('Сервис электронных платежей', 'img/proekt4.jpg')
-                            );
-                            foreach($arr as $item){
-                        ?>
-                            <div class="card">
-                                    <img class="card-img-top" src="<?=$item[1]?>" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title"><?=$item[0]?></h5>
-                                      <div>
-                                        <span style="margin-right: 8px;">Срок погашения<p>21.12.2018</p></span>
-                                        <span style="margin-right: 8px;"><img src="img/procent.png"/></span>
-                                        <span>Ставка: <p>7,52%</p></span>
-                                      </div>
-                                      <a class="btn btn-block" href="#" role="button">Инвестировать</a>                                   
-                                </div>
+        <div class="container container-slider pt-3">
+            <div class="main_list_proekt owl-carousel owl-theme-zber">
+                <?php
+                $arr = array(
+                    array('КОФЕЙНЯ', 'img/proekt1.jpg'),
+                    array('Перерабатывающий комплекс', 'img/proekt2.jpg'),
+                    array('Добыча песка на речном карьере', 'img/proekt3.jpg'),
+                    array('Сервис электронных платежей', 'img/proekt4.jpg'),
+                    array('Добыча песка на речном карьере', 'img/proekt3.jpg'),
+                    array('Сервис электронных платежей', 'img/proekt4.jpg')
+                );
+                foreach($arr as $item){
+                    ?>
+                    <div class="card">
+                        <img class="card-img-top" src="<?=$item[1]?>" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title"><?=$item[0]?></h3>
+                            <p>Интернет магазин брендовой детской одежды и обуви</p>
+                            <div class="group-info">
+                                <div><img src="img/procent.png"/></div>
+                                <div>Ставка: <br><b>7,52%</b></div>
+                                <div>Срок погашения<br><b>21.12.2018</b></div>
                             </div>
-                        <?php } ?>
-                    
-                
-                </div>
+                            <span class="group-btn">
+                                        <a class="col btn btn-light flex mr-3" href="#" role="button">Подробнее</a>
+                                        <a class="col btn btn-light" href="#" role="button">Инвестировать</a>
+                                    </span>
+                        </div>
+                    </div>
+                <?php } ?>
+
+
+            </div>
         </div>
         <!--Как вложить деньги-->
-        <div class="container kak_poluchit_dengi">
+        <div class="container kak_poluchit_dengi mt-5">
             <div class="row">
                 <div class="col-xl-12">
                     <h2 class="text-center head_block">Как вложить деньги</h2>
                 </div>
             </div>            
-            <div class="row" style="margin-top: 65px;">
+            <div class="row">
                 <!--Левая часть-->
                 <div class="col-xl-6 col-lg-6">
-                    <div class="media">
+                    <div class="media mt-5">
                         <img  src="img/inv_p1.png" alt="Generic placeholder image">
-                        <div class="media-body">
+                        <div class="media-body ml-3 ml-md-5">
                             <h3>Зарегистрируйтесь на сайте</h3>
                             <p>заполните форму и получите доступ к личному кабинету Инвестора</p>
                         </div>
                     </div>
-                    <div class="media">
+                    <div class="media mt-5">
                         <img src="img/inv_p2.png" alt="Generic placeholder image">
-                        <div class="media-body">
+                        <div class="media-body ml-3 ml-md-5">
                             <h3>Заключите брокерский договор</h3>
                             <p>Брокер действует в качестве комиссионера (от своего имени)</p>
                         </div>
                     </div>
-                    <div class="media">
+                    <div class="media mt-5">
                         <img  src="img/inv_p3.png" alt="Generic placeholder image">
-                        <div class="media-body">
+                        <div class="media-body ml-3 ml-md-5">
                             <h3>Откройте счет</h3>
                             <p>для получения дохода от инвестиций</p>
                         </div>
@@ -161,101 +171,170 @@ if(!isset($_COOKIE['tryUser'])) {
                 </div>
                 <!--Правая часть-->
                 <div class="col-xl-6 col-lg-6">
-                    <div class="media">
+                    <div class="media mt-5">
                         <img  src="img/inv_p4.png" alt="Generic placeholder image">
-                        <div class="media-body">
-                            <h3>Выберите проект для инвестирования</h3>
-                            <p>подайте заявку Брокеру на заключение опционного договора с Эмитентом</p>
+                        <div class="media-body ml-3 ml-md-5">
+                            <h3>Зарегистрируйтесь на сайте</h3>
+                            <p>заполните форму и получите доступ к личному кабинету Инвестора</p>
                         </div>
                     </div>
-                    <div class="media">
+                    <div class="media mt-5">
                         <img src="img/inv_p5.png" alt="Generic placeholder image">
-                        <div class="media-body">
-                            <h3>Перечислите средства</h3>
-                            <p>минимальная сумма вложений – 10 000 рублей<</p>
+                        <div class="media-body ml-3 ml-md-5">
+                            <h3>Заключите брокерский договор</h3>
+                            <p>Брокер действует в качестве комиссионера (от своего имени)</p>
                         </div>
                     </div>
-                    <div class="media">
+                    <div class="media mt-5">
                         <img  src="img/inv_p6.png" alt="Generic placeholder image">
-                        <div class="media-body">
-                            <h3>Получайте доход</h3>
-                            <p>на свой расчетный счет или реинвестируйте средства в новые проекты</p>
+                        <div class="media-body ml-3 ml-md-5">
+                            <h3>Откройте счет</h3>
+                            <p>для получения дохода от инвестиций</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container mt-5 pt-5">
+            <h2 class="text-center">Условия</h2>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <ul class="ul-zber">
+                        <li>В случае несвоевременного погашения обязательств по опционному договору Инвестор вправе инициировать через Брокера обращение к коллекторам, активировав такое поручение через сайт. При этом в случае удачного взыскания средств, Инвестор должен будет заплатить через Брокера коллекторам определенный процент от возвращенной суммы.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="ul-zber">
+                        <li>В случае просрочки более 30 дней по погашению любого опционного контракта, обязательства по всем действующим опционным контрактам этого Эмитента подлежат досрочному погашению. Брокер автоматически обращается в суд от имени всех клиентов по взысканию сумм по всем не истекшим опционным контрактам, ранее заключенным данным Эмитентом. Для покрытия судебных издержек используется гарантийная сумма, которая заранее формируется у Брокера за счет блокирования части средств, которые привлекает Эмитент при каждом заключении опционного договора (1-5% от суммы привлеченных средств).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!--Блок регистрация/авторизация-->
-        <div class="container autorisation" style="margin-bottom:82px;">
+        <div class="border-bottom pb-5 mt-5">
+            <div class="container autorisation">
             <div class="row">
                 <div class="col-xl-12">
                     <h2 class="text-center head_block">Регистрация/Вход</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-12 col-sm-12">
-                    <div class="rounded button_os"><span class="bt_sr_active">Инвестор</span><span>Эмитент</span></div>
+            <div class="row button_os_container mb-2 mb-md-5">
+                <div class="button_os">
+                    <span class="bt_sr_active" data-pointer="1" data-name="type">Инвестор</span><span data-pointer="2" data-name="type">Эмитент</span>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-6">
-                    <h2 class="text-left head_block">Регистрация</h2>
-                    <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+            <div class="row box_reg_input" data-slide="1" data-sliderName="type">
+                <div class="col-md-6">
+                    <h2 class="text-left head_block">Регистрация Инвестора</h2>
+                    <p>Инвестировать может любая коммерческая организация, индивидуальный предприниматель или частное лицо.</p>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12 reg_usertype">
+                                <label>
+                                    <input type="radio" name="usertype">
+                                    <div>Физическое лицо</div>
+                                </label>
+                                <label>
+                                    <input type="radio" name="usertype">
+                                    <div>Юридическое Лицо</div>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Фамилия" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Имя" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Отчество" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Телефон" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <button type="submit" class="vz_button btn">Регистрация</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-xl-1">
-                    <div class="registration_dec_line border-right" style="height: 7rem; margin-top: 39px;"></div>
+                <div class="col-md-1">
+                    <div class="registration_dec_line">
+                        <span class="bg-white gray_text p-3">Или</span>
+                    </div>
                 </div>
-                <div class="col-xl-5">
+                <div class="col-md-5">
                     <h2 class="text-left head_block">Вход</h2>
                     <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                    <form action="">
+                        <input type="text" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Логин" value="">
+                        <input type="password" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Пароль" value="">
+                        <button type="submit" class="vz_button btn">Войти</button>
+                    </form>
                 </div>
             </div>
-            <div class="row box_reg_input">
-                <div class="col-xl-3">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Физическое лицо">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Фамилия">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Отчество">
-                    <button type="" class="vz_button btn">Регистрация</button>
+            <div class="row box_reg_input" data-slide="2" data-sliderName="type" style="display: none">
+                <div class="col-md-6">
+                    <h2 class="text-left head_block">Регистрация Эмитента</h2>
+                    <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Логин" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Пароль" value="">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="" id="" class="form-control vz_input mb-3" rows="4" placeholder="Обоснование регистрации"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="submit" class="vz_button btn">Регистрация</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-xl-3">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Юридическое лицо">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Имя">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Телефон">
+                <div class="col-md-1">
+                    <div class="registration_dec_line">
+                        <span class="bg-white gray_text p-3">Или</span>
+                    </div>
                 </div>
-                <div class="col-xl-1">                    
-                    <p class="text-center" style="color:#b5b5b5; margin-top: 10px;">Или</p>
-                    <div class="registration_dec_line border-right" style="height: 14rem;"></div>
-                </div>
-                <div class="col-xl-4">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Логин">
-                    <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="Пароль">
-                    <button type="" class="vz_button btn">Войти</button>
+                <div class="col-md-5">
+                    <h2 class="text-left head_block">Вход</h2>
+                    <p>Привлечь инвестиции может любая коммерческая организация или индивидуальный предприниматель  </p>
+                    <form action="">
+                        <input type="text" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Логин" value="">
+                        <input type="password" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Пароль" value="">
+                        <button type="submit" class="vz_button btn">Войти</button>
+                    </form>
                 </div>
             </div>
+        </div><!--Блок регистрация/авторизация-->
         </div>
         <!--Подвал-->
         <footer>
-            <div class="grey_bg">
+            <div class="footer-tel-white">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12 text-center tel_box">
-                                    <h2>8(800) 000 00 00</h2>
-                                    <h4>Бесплатно по России</h4>
+                        <div class="col-xl-12 tel_box">
+                            <span class="footer-tel-numb">8(800) 000 00 00</span>
+                            <span class="footer-tel-text">Бесплатно по России</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row bottom_footer">
-                    <div class="col-xl-7">
-                                <img src="img/logo_hd.png" alt="">
-                    </div>
-                    <div class="col-xl-5 box_footer_podpiska">
-                        <h3>Подписка на новости</h3>
-                        <h4>Будьте в курсе всех событий</h4>
-                        <input type="" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="E-mail">
-                        <button type="" class="vz_button btn float-right">Подписаться</button>
-                    </div>
+            <div class="bottom_footer grey_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="img/logo_hd.png" alt="">
+                        </div>
+                        <div class="col-md-5 box_footer_podpiska">
+                            <span class="subscribe_text d-block">Подписка на новости</span>
+                            <span class="gray_text">Будьте в курсе всех событий</span>
+                            <input type="text" name=""  class="form-control vz_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="E-mail">
+                            <button type="submit" class="vz_button btn float-right">Подписаться</button>
+                        </div>
+                    </div
                 </div>
             </div>
         </footer>
@@ -268,20 +347,32 @@ if(!isset($_COOKIE['tryUser'])) {
             window.onload = function() {
                 $('.main_list_proekt').owlCarousel({
                     loop:false,
-                    margin:10,
                     nav:false,
-                    responsive:{
-                        0:{
-                            items:1
+                    dotsEach: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            stagePadding: 5,
+                            margin: 0,
+                            autoWidth: true
                         },
-                        600:{
-                            items:2
+                        544: {
+                            items: 1,
+                            stagePadding: 5,
+                            margin: 15
                         },
-                        1000:{
-                            items:3
+                        768: {
+                            items: 2,
+                            stagePadding: 5,
+                            margin: 15,
+                        },
+                        992: {
+                            stagePadding: 0,
+                            margin: 15,
+                            items: 3
                         }
                     }
-                })
+                });
             };
         </script>
     </body>
