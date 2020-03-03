@@ -694,20 +694,20 @@ input[type=checkbox]:checked + label:after {
 
 /* --- Zaemshik --- */
 .zaemshik-description h2{
-    font-size: 36px;
     margin-top: 75px;
     font-weight: 300;
 }
 .zaemshik-description h3{
-    font-size: 24px;
     margin-top: 50px;
     margin-bottom: 30px;
     font-weight: 300;
 }
 .zaemshik-description .zaemshik-description-portret{
-    width: 138px;
-    height: 138px;
+    width: 120px!important;
+    height: 120px;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .zaemshik-description .zaemshik-description-fio{
     font-size: 36px;
